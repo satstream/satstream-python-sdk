@@ -22,9 +22,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from satstream-python-sdk.configuration import Configuration
-import satstream-python-sdk.models
-from satstream-python-sdk import rest
+from satstream_python_sdk.configuration import Configuration
+import satstream_python_sdk.models
+from satstream_python_sdk import rest
 
 
 class ApiClient(object):
@@ -257,7 +257,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(satstream-python-sdk.models, klass)
+                klass = getattr(satstream_python_sdk.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

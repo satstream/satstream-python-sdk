@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.models.github_com_satstream_ss_utils_rpc_block import GithubComSatstreamSsUtilsRpcBlock  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.models.github_com_satstream_ss_utils_rpc_block import GithubComSatstreamSsUtilsRpcBlock  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestGithubComSatstreamSsUtilsRpcBlock(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGithubComSatstreamSsUtilsRpcBlock(unittest.TestCase):
     def testGithubComSatstreamSsUtilsRpcBlock(self):
         """Test GithubComSatstreamSsUtilsRpcBlock"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream-python-sdk.models.github_com_satstream_ss_utils_rpc_block.GithubComSatstreamSsUtilsRpcBlock()  # noqa: E501
+        # model = satstream_python_sdk.models.github_com_satstream_ss_utils_rpc_block.GithubComSatstreamSsUtilsRpcBlock()  # noqa: E501
         pass
 
 

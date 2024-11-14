@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.models.responses_get_mempool_tx_info import ResponsesGetMempoolTxInfo  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.models.responses_get_mempool_tx_info import ResponsesGetMempoolTxInfo  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestResponsesGetMempoolTxInfo(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponsesGetMempoolTxInfo(unittest.TestCase):
     def testResponsesGetMempoolTxInfo(self):
         """Test ResponsesGetMempoolTxInfo"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream-python-sdk.models.responses_get_mempool_tx_info.ResponsesGetMempoolTxInfo()  # noqa: E501
+        # model = satstream_python_sdk.models.responses_get_mempool_tx_info.ResponsesGetMempoolTxInfo()  # noqa: E501
         pass
 
 

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.models.responses_get_runes_info_list import ResponsesGetRunesInfoList  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.models.responses_get_runes_info_list import ResponsesGetRunesInfoList  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestResponsesGetRunesInfoList(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponsesGetRunesInfoList(unittest.TestCase):
     def testResponsesGetRunesInfoList(self):
         """Test ResponsesGetRunesInfoList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream-python-sdk.models.responses_get_runes_info_list.ResponsesGetRunesInfoList()  # noqa: E501
+        # model = satstream_python_sdk.models.responses_get_runes_info_list.ResponsesGetRunesInfoList()  # noqa: E501
         pass
 
 

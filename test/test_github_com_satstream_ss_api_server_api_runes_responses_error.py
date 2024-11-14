@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.models.github_com_satstream_ss_api_server_api_runes_responses_error import GithubComSatstreamSsApiServerApiRunesResponsesError  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.models.github_com_satstream_ss_api_server_api_runes_responses_error import GithubComSatstreamSsApiServerApiRunesResponsesError  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestGithubComSatstreamSsApiServerApiRunesResponsesError(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGithubComSatstreamSsApiServerApiRunesResponsesError(unittest.TestCase)
     def testGithubComSatstreamSsApiServerApiRunesResponsesError(self):
         """Test GithubComSatstreamSsApiServerApiRunesResponsesError"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream-python-sdk.models.github_com_satstream_ss_api_server_api_runes_responses_error.GithubComSatstreamSsApiServerApiRunesResponsesError()  # noqa: E501
+        # model = satstream_python_sdk.models.github_com_satstream_ss_api_server_api_runes_responses_error.GithubComSatstreamSsApiServerApiRunesResponsesError()  # noqa: E501
         pass
 
 

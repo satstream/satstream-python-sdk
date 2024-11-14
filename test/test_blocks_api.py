@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.api.blocks_api import BlocksApi  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.api.blocks_api import BlocksApi  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestBlocksApi(unittest.TestCase):

@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.models.all_ofresponses_get_address_timeframe_balance_item_block_range import AllOfresponsesGetAddressTimeframeBalanceItemBlockRange  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.models.all_ofresponses_get_address_timeframe_balance_item_block_range import AllOfresponsesGetAddressTimeframeBalanceItemBlockRange  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestAllOfresponsesGetAddressTimeframeBalanceItemBlockRange(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestAllOfresponsesGetAddressTimeframeBalanceItemBlockRange(unittest.TestCa
     def testAllOfresponsesGetAddressTimeframeBalanceItemBlockRange(self):
         """Test AllOfresponsesGetAddressTimeframeBalanceItemBlockRange"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream-python-sdk.models.all_ofresponses_get_address_timeframe_balance_item_block_range.AllOfresponsesGetAddressTimeframeBalanceItemBlockRange()  # noqa: E501
+        # model = satstream_python_sdk.models.all_ofresponses_get_address_timeframe_balance_item_block_range.AllOfresponsesGetAddressTimeframeBalanceItemBlockRange()  # noqa: E501
         pass
 
 

@@ -17,7 +17,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from satstream-python-sdk.api_client import ApiClient
+from satstream_python_sdk.api_client import ApiClient
 
 
 class BlocksApi(object):

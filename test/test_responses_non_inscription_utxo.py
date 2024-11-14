@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import satstream-python-sdk
-from satstream-python-sdk.models.responses_non_inscription_utxo import ResponsesNonInscriptionUTXO  # noqa: E501
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.models.responses_non_inscription_utxo import ResponsesNonInscriptionUTXO  # noqa: E501
+from satstream_python_sdk.rest import ApiException
 
 
 class TestResponsesNonInscriptionUTXO(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponsesNonInscriptionUTXO(unittest.TestCase):
     def testResponsesNonInscriptionUTXO(self):
         """Test ResponsesNonInscriptionUTXO"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream-python-sdk.models.responses_non_inscription_utxo.ResponsesNonInscriptionUTXO()  # noqa: E501
+        # model = satstream_python_sdk.models.responses_non_inscription_utxo.ResponsesNonInscriptionUTXO()  # noqa: E501
         pass
 
 

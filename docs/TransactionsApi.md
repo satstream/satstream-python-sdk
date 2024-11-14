@@ -1,4 +1,4 @@
-# satstream-python-sdk.TransactionsApi
+# satstream_python_sdk.TransactionsApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -19,18 +19,18 @@ Broadcast a raw transaction to the Bitcoin network
 ```python
 from __future__ import print_function
 import time
-import satstream-python-sdk
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.TransactionsApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
 body = 'body_example' # str | Raw transaction hex
 
 try:
@@ -73,12 +73,12 @@ Get a transaction by its hash
 ```python
 from __future__ import print_function
 import time
-import satstream-python-sdk
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.TransactionsApi()
+api_instance = satstream_python_sdk.TransactionsApi()
 hash = 'hash_example' # str | Transaction hash
 
 try:
@@ -121,18 +121,18 @@ Get detailed information about a specific transaction
 ```python
 from __future__ import print_function
 import time
-import satstream-python-sdk
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.TransactionsApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
 txid = 'txid_example' # str | Transaction ID
 
 try:

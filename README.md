@@ -24,7 +24,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import satstream-python-sdk 
+import satstream_python_sdk 
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import satstream-python-sdk
+import satstream_python_sdk
 ```
 
 ## Getting Started
@@ -48,18 +48,18 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import satstream-python-sdk
-from satstream-python-sdk.rest import ApiException
+import satstream_python_sdk
+from satstream_python_sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -70,13 +70,13 @@ except ApiException as e:
     print("Exception when calling AddressesApi->get_address_balance: %s\n" % e)
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -87,13 +87,13 @@ except ApiException as e:
     print("Exception when calling AddressesApi->get_address_non_inscription_utxos: %s\n" % e)
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 runeid = 'runeid_example' # str | Rune ID
 
@@ -105,13 +105,13 @@ except ApiException as e:
     print("Exception when calling AddressesApi->get_address_rune_balance: %s\n" % e)
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -122,13 +122,13 @@ except ApiException as e:
     print("Exception when calling AddressesApi->get_address_runes_balance_list: %s\n" % e)
 
 # Configure API key authorization: ApiKeyAuth
-configuration = satstream-python-sdk.Configuration()
+configuration = satstream_python_sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
+api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 timeframe = 'timeframe_example' # str | Timeframe
 token = 'token_example' # str | Token (optional)
