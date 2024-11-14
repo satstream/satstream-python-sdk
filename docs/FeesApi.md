@@ -1,4 +1,4 @@
-# swagger_client.FeesApi
+# satstream-python-sdk.FeesApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -17,12 +17,12 @@ Get recommended fees for Bitcoin transactions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FeesApi()
+api_instance = satstream-python-sdk.FeesApi()
 
 try:
     # Get recommended fees

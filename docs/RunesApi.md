@@ -1,4 +1,4 @@
-# swagger_client.RunesApi
+# satstream-python-sdk.RunesApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -19,18 +19,18 @@ Get a list of addresses holding a specific rune
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RunesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.RunesApi(satstream-python-sdk.ApiClient(configuration))
 rune_id = 'rune_id_example' # str | Rune ID
 
 try:
@@ -73,18 +73,18 @@ Get detailed information about a specific rune
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RunesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.RunesApi(satstream-python-sdk.ApiClient(configuration))
 rune_id = 'rune_id_example' # str | Rune ID
 
 try:
@@ -127,18 +127,18 @@ Get information about all runes
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.RunesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.RunesApi(satstream-python-sdk.ApiClient(configuration))
 page = 56 # int | Page number (default: 1) (optional)
 per_page = 56 # int | Items per page (default: 10) (optional)
 

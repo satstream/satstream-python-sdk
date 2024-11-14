@@ -1,4 +1,4 @@
-# swagger_client.MempoolApi
+# satstream-python-sdk.MempoolApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -19,18 +19,18 @@ Get all mempool transactions for a specific address
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MempoolApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.MempoolApi(satstream-python-sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -73,18 +73,18 @@ Get information about a specific transaction in the mempool
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.MempoolApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.MempoolApi(satstream-python-sdk.ApiClient(configuration))
 txid = 'txid_example' # str | Transaction ID
 
 try:
@@ -127,12 +127,12 @@ Get all transactions currently in the mempool
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MempoolApi()
+api_instance = satstream-python-sdk.MempoolApi()
 
 try:
     # Get mempool transactions

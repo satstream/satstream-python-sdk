@@ -1,4 +1,4 @@
-# swagger_client.AddressesApi
+# satstream-python-sdk.AddressesApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -21,18 +21,18 @@ Get the current balance of a Bitcoin address
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -75,18 +75,18 @@ Get all non-inscription UTXOs for a Bitcoin address
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -129,18 +129,18 @@ Get the balance of a specific rune for a Bitcoin address
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 runeid = 'runeid_example' # str | Rune ID
 
@@ -185,18 +185,18 @@ Get the balance of all runes for a Bitcoin address
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 
 try:
@@ -239,18 +239,18 @@ Get the balance of a Bitcoin address for a specific timeframe
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.AddressesApi(satstream-python-sdk.ApiClient(configuration))
 address = 'address_example' # str | Bitcoin address
 timeframe = 'timeframe_example' # str | Timeframe
 token = 'token_example' # str | Token (optional)

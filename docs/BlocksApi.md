@@ -1,4 +1,4 @@
-# swagger_client.BlocksApi
+# satstream-python-sdk.BlocksApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -20,12 +20,12 @@ Get information about a specific block by its hash
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BlocksApi()
+api_instance = satstream-python-sdk.BlocksApi()
 hash = 'hash_example' # str | Block hash
 
 try:
@@ -68,12 +68,12 @@ Get information about a specific block by height
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BlocksApi()
+api_instance = satstream-python-sdk.BlocksApi()
 height = 56 # int | Block height
 
 try:
@@ -116,12 +116,12 @@ Get transactions for a specific block height
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BlocksApi()
+api_instance = satstream-python-sdk.BlocksApi()
 height = 56 # int | Block height
 
 try:
@@ -164,12 +164,12 @@ Get the current block height of the Bitcoin blockchain
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BlocksApi()
+api_instance = satstream-python-sdk.BlocksApi()
 
 try:
     # Get current block height

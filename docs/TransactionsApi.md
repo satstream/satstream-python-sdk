@@ -1,4 +1,4 @@
-# swagger_client.TransactionsApi
+# satstream-python-sdk.TransactionsApi
 
 All URIs are relative to *https://api.satstream.io/api/v1*
 
@@ -19,18 +19,18 @@ Broadcast a raw transaction to the Bitcoin network
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TransactionsApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.TransactionsApi(satstream-python-sdk.ApiClient(configuration))
 body = 'body_example' # str | Raw transaction hex
 
 try:
@@ -73,12 +73,12 @@ Get a transaction by its hash
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TransactionsApi()
+api_instance = satstream-python-sdk.TransactionsApi()
 hash = 'hash_example' # str | Transaction hash
 
 try:
@@ -121,18 +121,18 @@ Get detailed information about a specific transaction
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = satstream-python-sdk.Configuration()
 configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.TransactionsApi(swagger_client.ApiClient(configuration))
+api_instance = satstream-python-sdk.TransactionsApi(satstream-python-sdk.ApiClient(configuration))
 txid = 'txid_example' # str | Transaction ID
 
 try:

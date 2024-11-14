@@ -12,7 +12,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "swagger-client"
+NAME = "Satstream Python SDK"
 VERSION = "1.0.0"
 # To install the library, run the following
 #
@@ -28,7 +28,7 @@ setup(
     version=VERSION,
     description="Satstream API",
     author_email="team@satstream.io",
-    url="",
+    url="https://github.com/satstream/satstream-python-sdk",
     keywords=["Swagger", "Satstream API"],
     install_requires=REQUIRES,
     packages=find_packages(),
