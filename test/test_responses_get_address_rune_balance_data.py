@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.responses_get_address_rune_balance_data import ResponsesGetAddressRuneBalanceData  # noqa: E501
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.models.responses_get_address_rune_balance_data import ResponsesGetAddressRuneBalanceData  # noqa: E501
+from satstream-python-sdk.rest import ApiException
 
 
 class TestResponsesGetAddressRuneBalanceData(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponsesGetAddressRuneBalanceData(unittest.TestCase):
     def testResponsesGetAddressRuneBalanceData(self):
         """Test ResponsesGetAddressRuneBalanceData"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.responses_get_address_rune_balance_data.ResponsesGetAddressRuneBalanceData()  # noqa: E501
+        # model = satstream-python-sdk.models.responses_get_address_rune_balance_data.ResponsesGetAddressRuneBalanceData()  # noqa: E501
         pass
 
 

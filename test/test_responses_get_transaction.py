@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.responses_get_transaction import ResponsesGetTransaction  # noqa: E501
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.models.responses_get_transaction import ResponsesGetTransaction  # noqa: E501
+from satstream-python-sdk.rest import ApiException
 
 
 class TestResponsesGetTransaction(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestResponsesGetTransaction(unittest.TestCase):
     def testResponsesGetTransaction(self):
         """Test ResponsesGetTransaction"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.responses_get_transaction.ResponsesGetTransaction()  # noqa: E501
+        # model = satstream-python-sdk.models.responses_get_transaction.ResponsesGetTransaction()  # noqa: E501
         pass
 
 

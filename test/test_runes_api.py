@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.runes_api import RunesApi  # noqa: E501
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.api.runes_api import RunesApi  # noqa: E501
+from satstream-python-sdk.rest import ApiException
 
 
 class TestRunesApi(unittest.TestCase):

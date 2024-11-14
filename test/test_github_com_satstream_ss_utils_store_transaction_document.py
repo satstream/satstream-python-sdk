@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.github_com_satstream_ss_utils_store_transaction_document import GithubComSatstreamSsUtilsStoreTransactionDocument  # noqa: E501
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.models.github_com_satstream_ss_utils_store_transaction_document import GithubComSatstreamSsUtilsStoreTransactionDocument  # noqa: E501
+from satstream-python-sdk.rest import ApiException
 
 
 class TestGithubComSatstreamSsUtilsStoreTransactionDocument(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGithubComSatstreamSsUtilsStoreTransactionDocument(unittest.TestCase):
     def testGithubComSatstreamSsUtilsStoreTransactionDocument(self):
         """Test GithubComSatstreamSsUtilsStoreTransactionDocument"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.github_com_satstream_ss_utils_store_transaction_document.GithubComSatstreamSsUtilsStoreTransactionDocument()  # noqa: E501
+        # model = satstream-python-sdk.models.github_com_satstream_ss_utils_store_transaction_document.GithubComSatstreamSsUtilsStoreTransactionDocument()  # noqa: E501
         pass
 
 

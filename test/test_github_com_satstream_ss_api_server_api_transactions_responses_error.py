@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.github_com_satstream_ss_api_server_api_transactions_responses_error import GithubComSatstreamSsApiServerApiTransactionsResponsesError  # noqa: E501
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.models.github_com_satstream_ss_api_server_api_transactions_responses_error import GithubComSatstreamSsApiServerApiTransactionsResponsesError  # noqa: E501
+from satstream-python-sdk.rest import ApiException
 
 
 class TestGithubComSatstreamSsApiServerApiTransactionsResponsesError(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestGithubComSatstreamSsApiServerApiTransactionsResponsesError(unittest.Te
     def testGithubComSatstreamSsApiServerApiTransactionsResponsesError(self):
         """Test GithubComSatstreamSsApiServerApiTransactionsResponsesError"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.github_com_satstream_ss_api_server_api_transactions_responses_error.GithubComSatstreamSsApiServerApiTransactionsResponsesError()  # noqa: E501
+        # model = satstream-python-sdk.models.github_com_satstream_ss_api_server_api_transactions_responses_error.GithubComSatstreamSsApiServerApiTransactionsResponsesError()  # noqa: E501
         pass
 
 

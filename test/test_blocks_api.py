@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.api.blocks_api import BlocksApi  # noqa: E501
-from swagger_client.rest import ApiException
+import satstream-python-sdk
+from satstream-python-sdk.api.blocks_api import BlocksApi  # noqa: E501
+from satstream-python-sdk.rest import ApiException
 
 
 class TestBlocksApi(unittest.TestCase):
