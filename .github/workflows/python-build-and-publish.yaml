@@ -1,10 +1,12 @@
+# This file is here to save, but it is added to Github manually.
 name: Build and Publish on ss-api Update
 
 # Trigger the workflow on a schedule and manually
 on:
-  schedule:
-    - cron: '0 * * * *'  # Runs every hour; adjust as needed
   workflow_dispatch:       # Allows manual triggering
+  push:
+    branches:
+      - main
 
 jobs:
   check-and-publish:
