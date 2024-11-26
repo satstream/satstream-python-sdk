@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **fetch_inscriptions**
-> list[object] fetch_inscriptions(body)
+> InlineResponse20019 fetch_inscriptions(body)
 
 Fetch multiple inscriptions
 
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**list[object]**
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 

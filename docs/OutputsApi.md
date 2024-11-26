@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_outputs**](OutputsApi.md#get_outputs) | **POST** /outputs | Get multiple outputs
 
 # **get_output_by_outpoint**
-> InlineResponse20025 get_output_by_outpoint(outpoint)
+> InlineResponse20026 get_output_by_outpoint(outpoint)
 
 Get output info by outpoint
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20025**](InlineResponse20025.md)
+[**InlineResponse20026**](InlineResponse20026.md)
 
 ### Authorization
 

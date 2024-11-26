@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**join_psbts**](PSBTsApi.md#join_psbts) | **POST** /psbt/join | Join PSBTs
 
 # **analyze_psbt**
-> InlineResponse20026 analyze_psbt(body)
+> InlineResponse20027 analyze_psbt(body)
 
 Analyze PSBT
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20026**](InlineResponse20026.md)
+[**InlineResponse20027**](InlineResponse20027.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **decode_psbt**
-> InlineResponse20027 decode_psbt(body)
+> InlineResponse20028 decode_psbt(body)
 
 Decode PSBT
 
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**InlineResponse20028**](InlineResponse20028.md)
 
 ### Authorization
 

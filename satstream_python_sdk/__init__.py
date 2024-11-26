@@ -116,6 +116,7 @@ from satstream_python_sdk.models.inline_response20038 import InlineResponse20038
 from satstream_python_sdk.models.inline_response20039 import InlineResponse20039
 from satstream_python_sdk.models.inline_response2004 import InlineResponse2004
 from satstream_python_sdk.models.inline_response20040 import InlineResponse20040
+from satstream_python_sdk.models.inline_response20041 import InlineResponse20041
 from satstream_python_sdk.models.inline_response2005 import InlineResponse2005
 from satstream_python_sdk.models.inline_response2006 import InlineResponse2006
 from satstream_python_sdk.models.inline_response2007 import InlineResponse2007

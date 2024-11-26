@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**decode_script**](ScriptsApi.md#decode_script) | **POST** /script/decode | Decode Script
 
 # **decode_script**
-> InlineResponse20031 decode_script(body)
+> InlineResponse20032 decode_script(body)
 
 Decode Script
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20031**](InlineResponse20031.md)
+[**InlineResponse20032**](InlineResponse20032.md)
 
 ### Authorization
 

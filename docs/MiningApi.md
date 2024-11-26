@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_network_hashps**](MiningApi.md#get_network_hashps) | **POST** /mining/networkhashps | Get network hash per second
 
 # **get_mining_info**
-> InlineResponse20024 get_mining_info()
+> InlineResponse20025 get_mining_info()
 
 Get mining information
 
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20024**](InlineResponse20024.md)
+[**InlineResponse20025**](InlineResponse20025.md)
 
 ### Authorization
 

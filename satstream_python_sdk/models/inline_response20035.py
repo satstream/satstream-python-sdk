@@ -29,7 +29,7 @@ class InlineResponse20035(UtilsResponseEnvelope):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[str]'
+        'data': 'UTXOSetInfo'
     }
     if hasattr(UtilsResponseEnvelope, "swagger_types"):
         swagger_types.update(UtilsResponseEnvelope.swagger_types)
@@ -54,7 +54,7 @@ class InlineResponse20035(UtilsResponseEnvelope):
 
 
         :return: The data of this InlineResponse20035.  # noqa: E501
-        :rtype: list[str]
+        :rtype: UTXOSetInfo
         """
         return self._data
 
@@ -64,7 +64,7 @@ class InlineResponse20035(UtilsResponseEnvelope):
 
 
         :param data: The data of this InlineResponse20035.  # noqa: E501
-        :type: list[str]
+        :type: UTXOSetInfo
         """
 
         self._data = data
