@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**get_latest_inscriptions_page**](InscriptionsApi.md#get_latest_inscriptions_page) | **GET** /inscriptions/{page} | Get latest inscriptions page
 
 # **fetch_inscription_child**
-> InlineResponse20017 fetch_inscription_child(inscription_id, child_index)
+> InlineResponse20013 fetch_inscription_child(inscription_id, child_index)
 
 Get inscription child info
 
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **fetch_inscriptions**
-> InlineResponse20019 fetch_inscriptions(body)
+> InlineResponse20015 fetch_inscriptions(body)
 
 Fetch multiple inscriptions
 
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20019**](InlineResponse20019.md)
+[**InlineResponse20015**](InlineResponse20015.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_block_inscriptions**
-> InlineResponse20018 get_block_inscriptions(block_height)
+> InlineResponse20014 get_block_inscriptions(block_height)
 
 Get inscriptions in a specific block
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_inscription**
-> InlineResponse20017 get_inscription(inscription_id)
+> InlineResponse20013 get_inscription(inscription_id)
 
 Get inscription info
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**InlineResponse20013**](InlineResponse20013.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_latest_inscriptions**
-> InlineResponse20018 get_latest_inscriptions()
+> InlineResponse20014 get_latest_inscriptions()
 
 Get latest inscriptions
 
@@ -266,7 +266,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 
@@ -280,7 +280,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_latest_inscriptions_page**
-> InlineResponse20018 get_latest_inscriptions_page(page)
+> InlineResponse20014 get_latest_inscriptions_page(page)
 
 Get latest inscriptions page
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20014**](InlineResponse20014.md)
 
 ### Authorization
 

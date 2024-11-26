@@ -43,7 +43,7 @@ class SatoshisApi(object):
 
         :param async_req bool
         :param int number: Satoshi Number (required)
-        :return: InlineResponse20031
+        :return: InlineResponse20028
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -65,7 +65,7 @@ class SatoshisApi(object):
 
         :param async_req bool
         :param int number: Satoshi Number (required)
-        :return: InlineResponse20031
+        :return: InlineResponse20028
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -119,7 +119,7 @@ class SatoshisApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20031',  # noqa: E501
+            response_type='InlineResponse20028',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

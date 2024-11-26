@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import satstream_python_sdk
-from satstream_python_sdk.models.inline_response20040 import InlineResponse20040  # noqa: E501
+from satstream_python_sdk.models.verify_message_response import VerifyMessageResponse  # noqa: E501
 from satstream_python_sdk.rest import ApiException
 
 
-class TestInlineResponse20040(unittest.TestCase):
-    """InlineResponse20040 unit test stubs"""
+class TestVerifyMessageResponse(unittest.TestCase):
+    """VerifyMessageResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestInlineResponse20040(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testInlineResponse20040(self):
-        """Test InlineResponse20040"""
+    def testVerifyMessageResponse(self):
+        """Test VerifyMessageResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream_python_sdk.models.inline_response20040.InlineResponse20040()  # noqa: E501
+        # model = satstream_python_sdk.models.verify_message_response.VerifyMessageResponse()  # noqa: E501
         pass
 
 

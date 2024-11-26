@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_network_hashps**](MiningApi.md#get_network_hashps) | **POST** /mining/networkhashps | Get network hash per second
 
 # **get_mining_info**
-> InlineResponse20025 get_mining_info()
+> InlineResponse20021 get_mining_info()
 
 Get mining information
 
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20025**](InlineResponse20025.md)
+[**InlineResponse20021**](InlineResponse20021.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_network_hashps**
-> InlineResponse20013 get_network_hashps(body)
+> InlineResponse2009 get_network_hashps(body)
 
 Get network hash per second
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 

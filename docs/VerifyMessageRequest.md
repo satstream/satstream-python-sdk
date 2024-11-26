@@ -1,4 +1,4 @@
-# RequestsVerifyMessageRequest
+# VerifyMessageRequest
 
 ## Properties
 Name | Type | Description | Notes

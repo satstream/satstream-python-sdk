@@ -29,7 +29,7 @@ class InlineResponse2003(UtilsResponseEnvelope):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'ValidateAddressResult'
+        'data': 'Block1'
     }
     if hasattr(UtilsResponseEnvelope, "swagger_types"):
         swagger_types.update(UtilsResponseEnvelope.swagger_types)
@@ -54,7 +54,7 @@ class InlineResponse2003(UtilsResponseEnvelope):
 
 
         :return: The data of this InlineResponse2003.  # noqa: E501
-        :rtype: ValidateAddressResult
+        :rtype: Block1
         """
         return self._data
 
@@ -64,7 +64,7 @@ class InlineResponse2003(UtilsResponseEnvelope):
 
 
         :param data: The data of this InlineResponse2003.  # noqa: E501
-        :type: ValidateAddressResult
+        :type: Block1
         """
 
         self._data = data

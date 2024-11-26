@@ -30,7 +30,7 @@ class DecodedPSBTOutput(object):
     swagger_types = {
         'bip32_derivs': 'list[PSBTBip32Deriv]',
         'redeem_script': 'AllOfDecodedPSBTOutputRedeemScript',
-        'unknown': 'dict(str, object)',
+        'unknown': 'AllOfDecodedPSBTOutputUnknown',
         'witness_script': 'AllOfDecodedPSBTOutputWitnessScript'
     }
 
@@ -110,7 +110,7 @@ class DecodedPSBTOutput(object):
         Unknown fields  # noqa: E501
 
         :return: The unknown of this DecodedPSBTOutput.  # noqa: E501
-        :rtype: dict(str, object)
+        :rtype: AllOfDecodedPSBTOutputUnknown
         """
         return self._unknown
 
@@ -121,7 +121,7 @@ class DecodedPSBTOutput(object):
         Unknown fields  # noqa: E501
 
         :param unknown: The unknown of this DecodedPSBTOutput.  # noqa: E501
-        :type: dict(str, object)
+        :type: AllOfDecodedPSBTOutputUnknown
         """
 
         self._unknown = unknown

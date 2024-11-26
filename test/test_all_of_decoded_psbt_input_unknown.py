@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import satstream_python_sdk
-from satstream_python_sdk.models.inline_response20039 import InlineResponse20039  # noqa: E501
+from satstream_python_sdk.models.all_of_decoded_psbt_input_unknown import AllOfDecodedPSBTInputUnknown  # noqa: E501
 from satstream_python_sdk.rest import ApiException
 
 
-class TestInlineResponse20039(unittest.TestCase):
-    """InlineResponse20039 unit test stubs"""
+class TestAllOfDecodedPSBTInputUnknown(unittest.TestCase):
+    """AllOfDecodedPSBTInputUnknown unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestInlineResponse20039(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testInlineResponse20039(self):
-        """Test InlineResponse20039"""
+    def testAllOfDecodedPSBTInputUnknown(self):
+        """Test AllOfDecodedPSBTInputUnknown"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream_python_sdk.models.inline_response20039.InlineResponse20039()  # noqa: E501
+        # model = satstream_python_sdk.models.all_of_decoded_psbt_input_unknown.AllOfDecodedPSBTInputUnknown()  # noqa: E501
         pass
 
 

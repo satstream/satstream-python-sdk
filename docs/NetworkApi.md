@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_difficulty**](NetworkApi.md#get_difficulty) | **GET** /chain/difficulty | Get difficulty
 
 # **get_chain_tx_stats**
-> InlineResponse20014 get_chain_tx_stats(body)
+> InlineResponse20010 get_chain_tx_stats(body)
 
 Get chain tx stats
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20014**](InlineResponse20014.md)
+[**InlineResponse20010**](InlineResponse20010.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_difficulty**
-> InlineResponse20013 get_difficulty()
+> InlineResponse2009 get_difficulty()
 
 Get difficulty
 
@@ -98,7 +98,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20013**](InlineResponse20013.md)
+[**InlineResponse2009**](InlineResponse2009.md)
 
 ### Authorization
 

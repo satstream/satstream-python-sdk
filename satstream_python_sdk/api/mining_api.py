@@ -42,7 +42,7 @@ class MiningApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20025
+        :return: InlineResponse20021
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class MiningApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20025
+        :return: InlineResponse20021
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -111,7 +111,7 @@ class MiningApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20025',  # noqa: E501
+            response_type='InlineResponse20021',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -130,7 +130,7 @@ class MiningApi(object):
 
         :param async_req bool
         :param RequestsGetNetworkHashPSRequest body: Network hash rate parameters (required)
-        :return: InlineResponse20013
+        :return: InlineResponse2009
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -152,7 +152,7 @@ class MiningApi(object):
 
         :param async_req bool
         :param RequestsGetNetworkHashPSRequest body: Network hash rate parameters (required)
-        :return: InlineResponse20013
+        :return: InlineResponse2009
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -210,7 +210,7 @@ class MiningApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20013',  # noqa: E501
+            response_type='InlineResponse2009',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

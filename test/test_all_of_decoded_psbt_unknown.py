@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import satstream_python_sdk
-from satstream_python_sdk.models.requests_verify_message_request import RequestsVerifyMessageRequest  # noqa: E501
+from satstream_python_sdk.models.all_of_decoded_psbt_unknown import AllOfDecodedPSBTUnknown  # noqa: E501
 from satstream_python_sdk.rest import ApiException
 
 
-class TestRequestsVerifyMessageRequest(unittest.TestCase):
-    """RequestsVerifyMessageRequest unit test stubs"""
+class TestAllOfDecodedPSBTUnknown(unittest.TestCase):
+    """AllOfDecodedPSBTUnknown unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestRequestsVerifyMessageRequest(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testRequestsVerifyMessageRequest(self):
-        """Test RequestsVerifyMessageRequest"""
+    def testAllOfDecodedPSBTUnknown(self):
+        """Test AllOfDecodedPSBTUnknown"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream_python_sdk.models.requests_verify_message_request.RequestsVerifyMessageRequest()  # noqa: E501
+        # model = satstream_python_sdk.models.all_of_decoded_psbt_unknown.AllOfDecodedPSBTUnknown()  # noqa: E501
         pass
 
 

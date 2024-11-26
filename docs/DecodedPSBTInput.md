@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **partial_signatures** | **dict(str, str)** | The public key and signature pairs | [optional] 
 **redeem_script** | **AllOfDecodedPSBTInputRedeemScript** | The redeem script | [optional] 
 **sighash** | **str** | The sighash type to be used | [optional] 
-**unknown** | **dict(str, object)** | Unknown fields | [optional] 
+**unknown** | **AllOfDecodedPSBTInputUnknown** | Unknown fields | [optional] 
 **witness_script** | **AllOfDecodedPSBTInputWitnessScript** | The witness script | [optional] 
 **witness_utxo** | **AllOfDecodedPSBTInputWitnessUtxo** | Transaction output for witness UTXOs | [optional] 
 

@@ -44,7 +44,7 @@ class InscriptionsApi(object):
         :param async_req bool
         :param str inscription_id: Inscription ID (required)
         :param int child_index: Child Index (required)
-        :return: InlineResponse20017
+        :return: InlineResponse20013
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -67,7 +67,7 @@ class InscriptionsApi(object):
         :param async_req bool
         :param str inscription_id: Inscription ID (required)
         :param int child_index: Child Index (required)
-        :return: InlineResponse20017
+        :return: InlineResponse20013
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -127,7 +127,7 @@ class InscriptionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20017',  # noqa: E501
+            response_type='InlineResponse20013',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -146,7 +146,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param list[str] body: Inscription IDs (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20015
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -168,7 +168,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param list[str] body: Inscription IDs (required)
-        :return: InlineResponse20019
+        :return: InlineResponse20015
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -226,7 +226,7 @@ class InscriptionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20019',  # noqa: E501
+            response_type='InlineResponse20015',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -245,7 +245,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param int block_height: Block Height (required)
-        :return: InlineResponse20018
+        :return: InlineResponse20014
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -267,7 +267,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param int block_height: Block Height (required)
-        :return: InlineResponse20018
+        :return: InlineResponse20014
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -321,7 +321,7 @@ class InscriptionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20018',  # noqa: E501
+            response_type='InlineResponse20014',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -340,7 +340,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param str inscription_id: Inscription ID (required)
-        :return: InlineResponse20017
+        :return: InlineResponse20013
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -362,7 +362,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param str inscription_id: Inscription ID (required)
-        :return: InlineResponse20017
+        :return: InlineResponse20013
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -416,7 +416,7 @@ class InscriptionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20017',  # noqa: E501
+            response_type='InlineResponse20013',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -434,7 +434,7 @@ class InscriptionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20018
+        :return: InlineResponse20014
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -455,7 +455,7 @@ class InscriptionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20018
+        :return: InlineResponse20014
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -503,7 +503,7 @@ class InscriptionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20018',  # noqa: E501
+            response_type='InlineResponse20014',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -522,7 +522,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param int page: Page number (required)
-        :return: InlineResponse20018
+        :return: InlineResponse20014
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -544,7 +544,7 @@ class InscriptionsApi(object):
 
         :param async_req bool
         :param int page: Page number (required)
-        :return: InlineResponse20018
+        :return: InlineResponse20014
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -598,7 +598,7 @@ class InscriptionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20018',  # noqa: E501
+            response_type='InlineResponse20014',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

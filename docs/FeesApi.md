@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**estimate_smart_fee**](FeesApi.md#estimate_smart_fee) | **POST** /fee/estimate-smart | Estimate smart fee
 
 # **estimate_raw_fee**
-> InlineResponse20015 estimate_raw_fee(body)
+> InlineResponse20011 estimate_raw_fee(body)
 
 Estimate Raw Fee
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20015**](InlineResponse20015.md)
+[**InlineResponse20011**](InlineResponse20011.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **estimate_smart_fee**
-> InlineResponse20016 estimate_smart_fee(body)
+> InlineResponse20012 estimate_smart_fee(body)
 
 Estimate smart fee
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**InlineResponse20012**](InlineResponse20012.md)
 
 ### Authorization
 

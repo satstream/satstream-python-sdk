@@ -43,7 +43,7 @@ class NetworkApi(object):
 
         :param async_req bool
         :param RequestsGetChainTxStatsRequest body: Chain tx stats request parameters (required)
-        :return: InlineResponse20014
+        :return: InlineResponse20010
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -65,7 +65,7 @@ class NetworkApi(object):
 
         :param async_req bool
         :param RequestsGetChainTxStatsRequest body: Chain tx stats request parameters (required)
-        :return: InlineResponse20014
+        :return: InlineResponse20010
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,7 +123,7 @@ class NetworkApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20014',  # noqa: E501
+            response_type='InlineResponse20010',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -141,7 +141,7 @@ class NetworkApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20013
+        :return: InlineResponse2009
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -162,7 +162,7 @@ class NetworkApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20013
+        :return: InlineResponse2009
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -210,7 +210,7 @@ class NetworkApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20013',  # noqa: E501
+            response_type='InlineResponse2009',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

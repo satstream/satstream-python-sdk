@@ -42,7 +42,7 @@ class StatusApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20033
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class StatusApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20033
+        :return: InlineResponse20030
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -111,7 +111,7 @@ class StatusApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20033',  # noqa: E501
+            response_type='InlineResponse20030',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

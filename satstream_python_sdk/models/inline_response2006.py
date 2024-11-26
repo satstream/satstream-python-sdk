@@ -29,7 +29,7 @@ class InlineResponse2006(UtilsResponseEnvelope):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'Block3'
+        'data': 'BlockchainInfo'
     }
     if hasattr(UtilsResponseEnvelope, "swagger_types"):
         swagger_types.update(UtilsResponseEnvelope.swagger_types)
@@ -54,7 +54,7 @@ class InlineResponse2006(UtilsResponseEnvelope):
 
 
         :return: The data of this InlineResponse2006.  # noqa: E501
-        :rtype: Block3
+        :rtype: BlockchainInfo
         """
         return self._data
 
@@ -64,7 +64,7 @@ class InlineResponse2006(UtilsResponseEnvelope):
 
 
         :param data: The data of this InlineResponse2006.  # noqa: E501
-        :type: Block3
+        :type: BlockchainInfo
         """
 
         self._data = data

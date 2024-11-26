@@ -29,7 +29,7 @@ class InlineResponse20017(UtilsResponseEnvelope):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'InscriptionResponse'
+        'data': 'MempoolDescendantsData'
     }
     if hasattr(UtilsResponseEnvelope, "swagger_types"):
         swagger_types.update(UtilsResponseEnvelope.swagger_types)
@@ -54,7 +54,7 @@ class InlineResponse20017(UtilsResponseEnvelope):
 
 
         :return: The data of this InlineResponse20017.  # noqa: E501
-        :rtype: InscriptionResponse
+        :rtype: MempoolDescendantsData
         """
         return self._data
 
@@ -64,7 +64,7 @@ class InlineResponse20017(UtilsResponseEnvelope):
 
 
         :param data: The data of this InlineResponse20017.  # noqa: E501
-        :type: InscriptionResponse
+        :type: MempoolDescendantsData
         """
 
         self._data = data

@@ -35,7 +35,7 @@ class DecodedPSBTInput(object):
         'partial_signatures': 'dict(str, str)',
         'redeem_script': 'AllOfDecodedPSBTInputRedeemScript',
         'sighash': 'str',
-        'unknown': 'dict(str, object)',
+        'unknown': 'AllOfDecodedPSBTInputUnknown',
         'witness_script': 'AllOfDecodedPSBTInputWitnessScript',
         'witness_utxo': 'AllOfDecodedPSBTInputWitnessUtxo'
     }
@@ -255,7 +255,7 @@ class DecodedPSBTInput(object):
         Unknown fields  # noqa: E501
 
         :return: The unknown of this DecodedPSBTInput.  # noqa: E501
-        :rtype: dict(str, object)
+        :rtype: AllOfDecodedPSBTInputUnknown
         """
         return self._unknown
 
@@ -266,7 +266,7 @@ class DecodedPSBTInput(object):
         Unknown fields  # noqa: E501
 
         :param unknown: The unknown of this DecodedPSBTInput.  # noqa: E501
-        :type: dict(str, object)
+        :type: AllOfDecodedPSBTInputUnknown
         """
 
         self._unknown = unknown

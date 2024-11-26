@@ -29,7 +29,7 @@ class InlineResponse20032(UtilsResponseEnvelope):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'DecodedScript'
+        'data': 'UTXOSetInfo'
     }
     if hasattr(UtilsResponseEnvelope, "swagger_types"):
         swagger_types.update(UtilsResponseEnvelope.swagger_types)
@@ -54,7 +54,7 @@ class InlineResponse20032(UtilsResponseEnvelope):
 
 
         :return: The data of this InlineResponse20032.  # noqa: E501
-        :rtype: DecodedScript
+        :rtype: UTXOSetInfo
         """
         return self._data
 
@@ -64,7 +64,7 @@ class InlineResponse20032(UtilsResponseEnvelope):
 
 
         :param data: The data of this InlineResponse20032.  # noqa: E501
-        :type: DecodedScript
+        :type: UTXOSetInfo
         """
 
         self._data = data

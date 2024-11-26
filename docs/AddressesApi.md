@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**verify_message**](AddressesApi.md#verify_message) | **POST** /address/verify-message | Verify message
 
 # **get_address**
-> InlineResponse2001 get_address(address)
+> GetAddressResponse get_address(address)
 
 Get address info
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**GetAddressResponse**](GetAddressResponse.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_address_utxos**
-> InlineResponse2002 get_address_utxos(address, type=type)
+> GetAddressUTXOsResponse get_address_utxos(address, type=type)
 
 Get UTXOs for an address
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**GetAddressUTXOsResponse**](GetAddressUTXOsResponse.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **validate_address**
-> InlineResponse2003 validate_address(address)
+> ValidateAddressResponse validate_address(address)
 
 Validate address
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**ValidateAddressResponse**](ValidateAddressResponse.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **verify_message**
-> InlineResponse200 verify_message(body)
+> VerifyMessageResponse verify_message(body)
 
 Verify message
 
@@ -196,7 +196,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsVerifyMessageRequest() # RequestsVerifyMessageRequest | Message verification parameters
+body = satstream_python_sdk.VerifyMessageRequest() # VerifyMessageRequest | Message verification parameters
 
 try:
     # Verify message
@@ -210,11 +210,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsVerifyMessageRequest**](RequestsVerifyMessageRequest.md)| Message verification parameters | 
+ **body** | [**VerifyMessageRequest**](VerifyMessageRequest.md)| Message verification parameters | 
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**VerifyMessageResponse**](VerifyMessageResponse.md)
 
 ### Authorization
 

@@ -29,7 +29,7 @@ class InlineResponse20023(UtilsResponseEnvelope):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'RawMempoolData'
+        'data': 'list[OutputResponse]'
     }
     if hasattr(UtilsResponseEnvelope, "swagger_types"):
         swagger_types.update(UtilsResponseEnvelope.swagger_types)
@@ -54,7 +54,7 @@ class InlineResponse20023(UtilsResponseEnvelope):
 
 
         :return: The data of this InlineResponse20023.  # noqa: E501
-        :rtype: RawMempoolData
+        :rtype: list[OutputResponse]
         """
         return self._data
 
@@ -64,7 +64,7 @@ class InlineResponse20023(UtilsResponseEnvelope):
 
 
         :param data: The data of this InlineResponse20023.  # noqa: E501
-        :type: RawMempoolData
+        :type: list[OutputResponse]
         """
 
         self._data = data

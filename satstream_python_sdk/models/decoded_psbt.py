@@ -32,7 +32,7 @@ class DecodedPSBT(object):
         'inputs': 'list[DecodedPSBTInput]',
         'outputs': 'list[DecodedPSBTOutput]',
         'tx': 'AllOfDecodedPSBTTx',
-        'unknown': 'dict(str, object)'
+        'unknown': 'AllOfDecodedPSBTUnknown'
     }
 
     attribute_map = {
@@ -161,7 +161,7 @@ class DecodedPSBT(object):
         The unknown global fields  # noqa: E501
 
         :return: The unknown of this DecodedPSBT.  # noqa: E501
-        :rtype: dict(str, object)
+        :rtype: AllOfDecodedPSBTUnknown
         """
         return self._unknown
 
@@ -172,7 +172,7 @@ class DecodedPSBT(object):
         The unknown global fields  # noqa: E501
 
         :param unknown: The unknown of this DecodedPSBT.  # noqa: E501
-        :type: dict(str, object)
+        :type: AllOfDecodedPSBTUnknown
         """
 
         self._unknown = unknown
