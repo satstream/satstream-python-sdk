@@ -28,13 +28,6 @@ class TestInscriptionsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_decode_tx(self):
-        """Test case for decode_tx
-
-        Decode a transaction  # noqa: E501
-        """
-        pass
-
     def test_fetch_inscription_child(self):
         """Test case for fetch_inscription_child
 
@@ -49,41 +42,6 @@ class TestInscriptionsApi(unittest.TestCase):
         """
         pass
 
-    def test_get_address(self):
-        """Test case for get_address
-
-        Get address info  # noqa: E501
-        """
-        pass
-
-    def test_get_address_utxos(self):
-        """Test case for get_address_utxos
-
-        Get UTXOs for an address  # noqa: E501
-        """
-        pass
-
-    def test_get_block_by_height(self):
-        """Test case for get_block_by_height
-
-        Get block info by height  # noqa: E501
-        """
-        pass
-
-    def test_get_block_count(self):
-        """Test case for get_block_count
-
-        Get the height of the latest block  # noqa: E501
-        """
-        pass
-
-    def test_get_block_hash_by_height(self):
-        """Test case for get_block_hash_by_height
-
-        Returns blockhash of specified block.  # noqa: E501
-        """
-        pass
-
     def test_get_block_inscriptions(self):
         """Test case for get_block_inscriptions
 
@@ -91,38 +49,10 @@ class TestInscriptionsApi(unittest.TestCase):
         """
         pass
 
-    def test_get_blocks(self):
-        """Test case for get_blocks
-
-        Returns the latest block height, last 100 block hashes, and featured inscriptions  # noqa: E501
-        """
-        pass
-
     def test_get_inscription(self):
         """Test case for get_inscription
 
         Get inscription info  # noqa: E501
-        """
-        pass
-
-    def test_get_latest_block_height(self):
-        """Test case for get_latest_block_height
-
-        Returns the height of the latest block.  # noqa: E501
-        """
-        pass
-
-    def test_get_latest_blockhash(self):
-        """Test case for get_latest_blockhash
-
-        Returns blockhash for the latest block.  # noqa: E501
-        """
-        pass
-
-    def test_get_latest_blocktime(self):
-        """Test case for get_latest_blocktime
-
-        Get the timestamp of the latest block  # noqa: E501
         """
         pass
 
@@ -137,62 +67,6 @@ class TestInscriptionsApi(unittest.TestCase):
         """Test case for get_latest_inscriptions_page
 
         Get latest inscriptions page  # noqa: E501
-        """
-        pass
-
-    def test_get_latest_runes(self):
-        """Test case for get_latest_runes
-
-        Get latest runes  # noqa: E501
-        """
-        pass
-
-    def test_get_latest_runes_page(self):
-        """Test case for get_latest_runes_page
-
-        Get latest runes page  # noqa: E501
-        """
-        pass
-
-    def test_get_output_by_outpoint(self):
-        """Test case for get_output_by_outpoint
-
-        Get output info by outpoint  # noqa: E501
-        """
-        pass
-
-    def test_get_outputs(self):
-        """Test case for get_outputs
-
-        Get multiple outputs  # noqa: E501
-        """
-        pass
-
-    def test_get_rune(self):
-        """Test case for get_rune
-
-        Get rune info  # noqa: E501
-        """
-        pass
-
-    def test_get_satoshi(self):
-        """Test case for get_satoshi
-
-        Get satoshi info  # noqa: E501
-        """
-        pass
-
-    def test_get_status(self):
-        """Test case for get_status
-
-        Get server status  # noqa: E501
-        """
-        pass
-
-    def test_get_transaction(self):
-        """Test case for get_transaction
-
-        Get transaction info  # noqa: E501
         """
         pass
 

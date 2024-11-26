@@ -45,6 +45,7 @@ class RequestsCombinePSBTRequest(object):
     def psbts(self):
         """Gets the psbts of this RequestsCombinePSBTRequest.  # noqa: E501
 
+        Array of base64-encoded PSBTs to combine  # noqa: E501
 
         :return: The psbts of this RequestsCombinePSBTRequest.  # noqa: E501
         :rtype: list[str]
@@ -55,6 +56,7 @@ class RequestsCombinePSBTRequest(object):
     def psbts(self, psbts):
         """Sets the psbts of this RequestsCombinePSBTRequest.
 
+        Array of base64-encoded PSBTs to combine  # noqa: E501
 
         :param psbts: The psbts of this RequestsCombinePSBTRequest.  # noqa: E501
         :type: list[str]

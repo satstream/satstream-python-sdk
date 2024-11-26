@@ -28,7 +28,7 @@ class RequestsGetTxSpendingPrevoutRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'outputs': 'list[GithubComSatstreamSsUtilsBitcoinCliTxSpendingPrevoutInput]'
+        'outputs': 'list[TxSpendingPrevoutInput]'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class RequestsGetTxSpendingPrevoutRequest(object):
         The transaction outputs to check  # noqa: E501
 
         :return: The outputs of this RequestsGetTxSpendingPrevoutRequest.  # noqa: E501
-        :rtype: list[GithubComSatstreamSsUtilsBitcoinCliTxSpendingPrevoutInput]
+        :rtype: list[TxSpendingPrevoutInput]
         """
         return self._outputs
 
@@ -60,7 +60,7 @@ class RequestsGetTxSpendingPrevoutRequest(object):
         The transaction outputs to check  # noqa: E501
 
         :param outputs: The outputs of this RequestsGetTxSpendingPrevoutRequest.  # noqa: E501
-        :type: list[GithubComSatstreamSsUtilsBitcoinCliTxSpendingPrevoutInput]
+        :type: list[TxSpendingPrevoutInput]
         """
 
         self._outputs = outputs

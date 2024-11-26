@@ -46,6 +46,7 @@ class RequestsAnalyzePSBTRequest(object):
     def psbt(self):
         """Gets the psbt of this RequestsAnalyzePSBTRequest.  # noqa: E501
 
+        The base64-encoded PSBT to analyze  # noqa: E501
 
         :return: The psbt of this RequestsAnalyzePSBTRequest.  # noqa: E501
         :rtype: str
@@ -56,6 +57,7 @@ class RequestsAnalyzePSBTRequest(object):
     def psbt(self, psbt):
         """Sets the psbt of this RequestsAnalyzePSBTRequest.
 
+        The base64-encoded PSBT to analyze  # noqa: E501
 
         :param psbt: The psbt of this RequestsAnalyzePSBTRequest.  # noqa: E501
         :type: str
