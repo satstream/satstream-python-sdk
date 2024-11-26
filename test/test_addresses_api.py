@@ -35,6 +35,20 @@ class TestAddressesApi(unittest.TestCase):
         """
         pass
 
+    def test_get_address_deltas(self):
+        """Test case for get_address_deltas
+
+        Get address deltas  # noqa: E501
+        """
+        pass
+
+    def test_get_address_rune_deltas(self):
+        """Test case for get_address_rune_deltas
+
+        Get address rune deltas  # noqa: E501
+        """
+        pass
+
     def test_get_address_utxos(self):
         """Test case for get_address_utxos
 
