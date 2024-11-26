@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**get_rune**](RunesApi.md#get_rune) | **GET** /rune/{rune_name} | Get rune info
 
 # **get_latest_runes**
-> InlineResponse20027 get_latest_runes()
+> GetLatestRunesResponse get_latest_runes()
 
 Get latest runes
 
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**GetLatestRunesResponse**](GetLatestRunesResponse.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_latest_runes_page**
-> InlineResponse20027 get_latest_runes_page(page)
+> GetLatestRunesResponse get_latest_runes_page(page)
 
 Get latest runes page
 
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20027**](InlineResponse20027.md)
+[**GetLatestRunesResponse**](GetLatestRunesResponse.md)
 
 ### Authorization
 
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_rune**
-> InlineResponse20026 get_rune(rune_name)
+> GetRuneResponse get_rune(rune_name)
 
 Get rune info
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20026**](InlineResponse20026.md)
+[**GetRuneResponse**](GetRuneResponse.md)
 
 ### Authorization
 

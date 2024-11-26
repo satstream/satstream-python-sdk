@@ -42,8 +42,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsAnalyzePSBTRequest body: PSBT to analyze (required)
-        :return: InlineResponse20024
+        :param AnalyzePSBTRequest body: PSBT to analyze (required)
+        :return: AnalyzePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -64,8 +64,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsAnalyzePSBTRequest body: PSBT to analyze (required)
-        :return: InlineResponse20024
+        :param AnalyzePSBTRequest body: PSBT to analyze (required)
+        :return: AnalyzePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,7 +123,7 @@ class PSBTsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20024',  # noqa: E501
+            response_type='AnalyzePSBTResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -141,8 +141,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCombinePSBTRequest body: Array of PSBTs to combine (required)
-        :return: InlineResponse2001
+        :param CombinePSBTRequest body: Array of PSBTs to combine (required)
+        :return: CombinePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -163,8 +163,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCombinePSBTRequest body: Array of PSBTs to combine (required)
-        :return: InlineResponse2001
+        :param CombinePSBTRequest body: Array of PSBTs to combine (required)
+        :return: CombinePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -222,7 +222,7 @@ class PSBTsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='CombinePSBTResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -240,8 +240,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCreatePSBTRequest body: Transaction parameters (required)
-        :return: InlineResponse2001
+        :param CreatePSBTRequest body: Transaction parameters (required)
+        :return: CreatePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -262,8 +262,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCreatePSBTRequest body: Transaction parameters (required)
-        :return: InlineResponse2001
+        :param CreatePSBTRequest body: Transaction parameters (required)
+        :return: CreatePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -321,7 +321,7 @@ class PSBTsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='CreatePSBTResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -339,8 +339,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsAnalyzePSBTRequest body: PSBT to decode (required)
-        :return: InlineResponse20025
+        :param DecodePSBTRequest body: PSBT to decode (required)
+        :return: DecodePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -361,8 +361,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsAnalyzePSBTRequest body: PSBT to decode (required)
-        :return: InlineResponse20025
+        :param DecodePSBTRequest body: PSBT to decode (required)
+        :return: DecodePSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -420,7 +420,7 @@ class PSBTsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20025',  # noqa: E501
+            response_type='DecodePSBTResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -438,8 +438,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsJoinPSBTsRequest body: PSBTs to join (required)
-        :return: InlineResponse2001
+        :param JoinPSBTsRequest body: PSBTs to join (required)
+        :return: JoinPSBTsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -460,8 +460,8 @@ class PSBTsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsJoinPSBTsRequest body: PSBTs to join (required)
-        :return: InlineResponse2001
+        :param JoinPSBTsRequest body: PSBTs to join (required)
+        :return: JoinPSBTsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -519,7 +519,7 @@ class PSBTsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='JoinPSBTsResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_outputs**](OutputsApi.md#get_outputs) | **POST** /outputs | Get multiple outputs
 
 # **get_output_by_outpoint**
-> InlineResponse20022 get_output_by_outpoint(outpoint)
+> InlineResponse200 get_output_by_outpoint(outpoint)
 
 Get output info by outpoint
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20022**](InlineResponse20022.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_outputs**
-> InlineResponse20023 get_outputs(body)
+> InlineResponse2001 get_outputs(body)
 
 Get multiple outputs
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20023**](InlineResponse20023.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 

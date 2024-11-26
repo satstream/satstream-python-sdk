@@ -42,7 +42,7 @@ class RunesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20027
+        :return: GetLatestRunesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class RunesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20027
+        :return: GetLatestRunesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -111,7 +111,7 @@ class RunesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20027',  # noqa: E501
+            response_type='GetLatestRunesResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -130,7 +130,7 @@ class RunesApi(object):
 
         :param async_req bool
         :param int page: Page number (required)
-        :return: InlineResponse20027
+        :return: GetLatestRunesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -152,7 +152,7 @@ class RunesApi(object):
 
         :param async_req bool
         :param int page: Page number (required)
-        :return: InlineResponse20027
+        :return: GetLatestRunesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -206,7 +206,7 @@ class RunesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20027',  # noqa: E501
+            response_type='GetLatestRunesResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -225,7 +225,7 @@ class RunesApi(object):
 
         :param async_req bool
         :param str rune_name: Rune Name (required)
-        :return: InlineResponse20026
+        :return: GetRuneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -247,7 +247,7 @@ class RunesApi(object):
 
         :param async_req bool
         :param str rune_name: Rune Name (required)
-        :return: InlineResponse20026
+        :return: GetRuneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -301,7 +301,7 @@ class RunesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20026',  # noqa: E501
+            response_type='GetRuneResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

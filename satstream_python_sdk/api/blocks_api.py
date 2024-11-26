@@ -42,7 +42,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: GetBlockCountResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: GetBlockCountResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -111,7 +111,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2007',  # noqa: E501
+            response_type='GetBlockCountResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -130,7 +130,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse200
+        :return: GetBlockDecodedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -152,7 +152,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse200
+        :return: GetBlockDecodedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -206,7 +206,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse200',  # noqa: E501
+            response_type='GetBlockDecodedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -225,7 +225,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str block_height: Block Height (required)
-        :return: InlineResponse2001
+        :return: GetBlockHashByHeightResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -247,7 +247,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str block_height: Block Height (required)
-        :return: InlineResponse2001
+        :return: GetBlockHashByHeightResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -301,7 +301,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='GetBlockHashByHeightResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -320,7 +320,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2001
+        :return: GetBlockHexResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -342,7 +342,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2001
+        :return: GetBlockHexResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -396,7 +396,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='GetBlockHexResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -415,7 +415,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2005
+        :return: GetBlockResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -437,7 +437,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2005
+        :return: GetBlockResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -491,7 +491,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2005',  # noqa: E501
+            response_type='GetBlockResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -510,7 +510,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2002
+        :return: GetBlockPrevoutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -532,7 +532,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2002
+        :return: GetBlockPrevoutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -586,7 +586,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2002',  # noqa: E501
+            response_type='GetBlockPrevoutResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -604,8 +604,8 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetBlockStatsRequest body: Block stats request parameters (required)
-        :return: InlineResponse2004
+        :param GetBlockStatsRequest body: Block stats request parameters (required)
+        :return: GetBlockStatsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -626,8 +626,8 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetBlockStatsRequest body: Block stats request parameters (required)
-        :return: InlineResponse2004
+        :param GetBlockStatsRequest body: Block stats request parameters (required)
+        :return: GetBlockStatsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -685,7 +685,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2004',  # noqa: E501
+            response_type='GetBlockStatsResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -704,7 +704,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2003
+        :return: GetBlockSummaryResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -726,7 +726,7 @@ class BlocksApi(object):
 
         :param async_req bool
         :param str identifier: Block hash or height (required)
-        :return: InlineResponse2003
+        :return: GetBlockSummaryResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -780,7 +780,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2003',  # noqa: E501
+            response_type='GetBlockSummaryResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -798,7 +798,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2006
+        :return: GetBlockchainInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -819,7 +819,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2006
+        :return: GetBlockchainInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -867,7 +867,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2006',  # noqa: E501
+            response_type='GetBlockchainInfoResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -885,7 +885,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2008
+        :return: GetBlocksResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -906,7 +906,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2008
+        :return: GetBlocksResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -954,7 +954,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2008',  # noqa: E501
+            response_type='GetBlocksResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -972,7 +972,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: GetLatestBlockHeightResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -993,7 +993,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: GetLatestBlockHeightResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1041,7 +1041,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2007',  # noqa: E501
+            response_type='GetLatestBlockHeightResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1059,7 +1059,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2001
+        :return: GetLatestBlockHashResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1080,7 +1080,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2001
+        :return: GetLatestBlockHashResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1128,7 +1128,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='GetLatestBlockHashResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1146,7 +1146,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: GetLatestBlockTimeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1167,7 +1167,7 @@ class BlocksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse2007
+        :return: GetLatestBlockTimeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1215,7 +1215,7 @@ class BlocksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2007',  # noqa: E501
+            response_type='GetLatestBlockTimeResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_difficulty**](NetworkApi.md#get_difficulty) | **GET** /chain/difficulty | Get difficulty
 
 # **get_chain_tx_stats**
-> InlineResponse20010 get_chain_tx_stats(body)
+> GetChainTxStatsResponse get_chain_tx_stats(body)
 
 Get chain tx stats
 
@@ -30,7 +30,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.NetworkApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetChainTxStatsRequest() # RequestsGetChainTxStatsRequest | Chain tx stats request parameters
+body = satstream_python_sdk.GetChainTxStatsRequest() # GetChainTxStatsRequest | Chain tx stats request parameters
 
 try:
     # Get chain tx stats
@@ -44,11 +44,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetChainTxStatsRequest**](RequestsGetChainTxStatsRequest.md)| Chain tx stats request parameters | 
+ **body** | [**GetChainTxStatsRequest**](GetChainTxStatsRequest.md)| Chain tx stats request parameters | 
 
 ### Return type
 
-[**InlineResponse20010**](InlineResponse20010.md)
+[**GetChainTxStatsResponse**](GetChainTxStatsResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_difficulty**
-> InlineResponse2009 get_difficulty()
+> GetDifficultyResponse get_difficulty()
 
 Get difficulty
 
@@ -98,7 +98,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**GetDifficultyResponse**](GetDifficultyResponse.md)
 
 ### Authorization
 

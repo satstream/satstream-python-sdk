@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_network_hashps**](MiningApi.md#get_network_hashps) | **POST** /mining/networkhashps | Get network hash per second
 
 # **get_mining_info**
-> InlineResponse20021 get_mining_info()
+> GetMiningInfoResponse get_mining_info()
 
 Get mining information
 
@@ -44,7 +44,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**GetMiningInfoResponse**](GetMiningInfoResponse.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_network_hashps**
-> InlineResponse2009 get_network_hashps(body)
+> GetNetworkHashPSResponse get_network_hashps(body)
 
 Get network hash per second
 
@@ -80,7 +80,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.MiningApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetNetworkHashPSRequest() # RequestsGetNetworkHashPSRequest | Network hash rate parameters
+body = satstream_python_sdk.GetNetworkHashPSRequest() # GetNetworkHashPSRequest | Network hash rate parameters
 
 try:
     # Get network hash per second
@@ -94,11 +94,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetNetworkHashPSRequest**](RequestsGetNetworkHashPSRequest.md)| Network hash rate parameters | 
+ **body** | [**GetNetworkHashPSRequest**](GetNetworkHashPSRequest.md)| Network hash rate parameters | 
 
 ### Return type
 
-[**InlineResponse2009**](InlineResponse2009.md)
+[**GetNetworkHashPSResponse**](GetNetworkHashPSResponse.md)
 
 ### Authorization
 

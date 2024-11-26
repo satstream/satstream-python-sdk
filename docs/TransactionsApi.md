@@ -20,7 +20,7 @@ Method | HTTP request | Description
 [**verify_tx_out_proof**](TransactionsApi.md#verify_tx_out_proof) | **POST** /tx/outproof/verify | Verify transaction output proof
 
 # **combine_raw_transaction**
-> InlineResponse2001 combine_raw_transaction(body)
+> CombineRawTransactionResponse combine_raw_transaction(body)
 
 Combine Raw Transactions
 
@@ -42,7 +42,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsCombineRawTransactionRequest() # RequestsCombineRawTransactionRequest | Array of hex-encoded raw transactions
+body = satstream_python_sdk.TransactionCombineRawTransactionRequest() # TransactionCombineRawTransactionRequest | Array of hex-encoded raw transactions
 
 try:
     # Combine Raw Transactions
@@ -56,11 +56,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsCombineRawTransactionRequest**](RequestsCombineRawTransactionRequest.md)| Array of hex-encoded raw transactions | 
+ **body** | [**TransactionCombineRawTransactionRequest**](TransactionCombineRawTransactionRequest.md)| Array of hex-encoded raw transactions | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**CombineRawTransactionResponse**](CombineRawTransactionResponse.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **convert_to_psbt**
-> InlineResponse2001 convert_to_psbt(body)
+> ConvertToPSBTResponse convert_to_psbt(body)
 
 Convert Raw Transaction to PSBT
 
@@ -96,7 +96,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsConvertToPSBTRequest() # RequestsConvertToPSBTRequest | Raw transaction conversion parameters
+body = satstream_python_sdk.TransactionConvertToPSBTRequest() # TransactionConvertToPSBTRequest | Raw transaction conversion parameters
 
 try:
     # Convert Raw Transaction to PSBT
@@ -110,11 +110,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsConvertToPSBTRequest**](RequestsConvertToPSBTRequest.md)| Raw transaction conversion parameters | 
+ **body** | [**TransactionConvertToPSBTRequest**](TransactionConvertToPSBTRequest.md)| Raw transaction conversion parameters | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**ConvertToPSBTResponse**](ConvertToPSBTResponse.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_raw_transaction**
-> InlineResponse2001 create_raw_transaction(body)
+> CreateRawTransactionResponse create_raw_transaction(body)
 
 Create Raw Transaction
 
@@ -150,7 +150,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsCreateRawTxRequest() # RequestsCreateRawTxRequest | Transaction parameters
+body = satstream_python_sdk.TransactionCreateRawTxRequest() # TransactionCreateRawTxRequest | Transaction parameters
 
 try:
     # Create Raw Transaction
@@ -164,11 +164,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsCreateRawTxRequest**](RequestsCreateRawTxRequest.md)| Transaction parameters | 
+ **body** | [**TransactionCreateRawTxRequest**](TransactionCreateRawTxRequest.md)| Transaction parameters | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**CreateRawTransactionResponse**](CreateRawTransactionResponse.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **decode_tx**
-> InlineResponse20036 decode_tx(txid)
+> DecodeTransactionResponse decode_tx(txid)
 
 Decode a transaction
 
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20036**](InlineResponse20036.md)
+[**DecodeTransactionResponse**](DecodeTransactionResponse.md)
 
 ### Authorization
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_raw_transaction_decoded**
-> InlineResponse20037 get_raw_transaction_decoded(txid)
+> GetRawTransactionDecodedResponse get_raw_transaction_decoded(txid)
 
 Get raw transaction (verbosity 1)
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20037**](InlineResponse20037.md)
+[**GetRawTransactionDecodedResponse**](GetRawTransactionDecodedResponse.md)
 
 ### Authorization
 
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_raw_transaction_hex**
-> InlineResponse2001 get_raw_transaction_hex(txid)
+> GetRawTransactionHexResponse get_raw_transaction_hex(txid)
 
 Get raw transaction (verbosity 0)
 
@@ -330,7 +330,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**GetRawTransactionHexResponse**](GetRawTransactionHexResponse.md)
 
 ### Authorization
 
@@ -344,7 +344,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_raw_transaction_prevout**
-> InlineResponse20038 get_raw_transaction_prevout(txid)
+> GetRawTransactionPrevoutResponse get_raw_transaction_prevout(txid)
 
 Get raw transaction (verbosity 2)
 
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20038**](InlineResponse20038.md)
+[**GetRawTransactionPrevoutResponse**](GetRawTransactionPrevoutResponse.md)
 
 ### Authorization
 
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_transaction**
-> InlineResponse20035 get_transaction(txid)
+> GetTransactionResponse get_transaction(txid)
 
 Get transaction info
 
@@ -438,7 +438,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20035**](InlineResponse20035.md)
+[**GetTransactionResponse**](GetTransactionResponse.md)
 
 ### Authorization
 
@@ -452,7 +452,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tx_out**
-> InlineResponse20031 get_tx_out(body)
+> GetTxOutResponse get_tx_out(body)
 
 Get transaction output
 
@@ -474,7 +474,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetTxOutRequest() # RequestsGetTxOutRequest | Transaction output request parameters
+body = satstream_python_sdk.TransactionGetTxOutRequest() # TransactionGetTxOutRequest | Transaction output request parameters
 
 try:
     # Get transaction output
@@ -488,11 +488,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetTxOutRequest**](RequestsGetTxOutRequest.md)| Transaction output request parameters | 
+ **body** | [**TransactionGetTxOutRequest**](TransactionGetTxOutRequest.md)| Transaction output request parameters | 
 
 ### Return type
 
-[**InlineResponse20031**](InlineResponse20031.md)
+[**GetTxOutResponse**](GetTxOutResponse.md)
 
 ### Authorization
 
@@ -506,7 +506,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tx_out_proof**
-> InlineResponse2001 get_tx_out_proof(body)
+> GetTxOutProofResponse get_tx_out_proof(body)
 
 Get transaction output proof
 
@@ -528,7 +528,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetTxOutProofRequest() # RequestsGetTxOutProofRequest | Transaction proof request parameters
+body = satstream_python_sdk.TransactionGetTxOutProofRequest() # TransactionGetTxOutProofRequest | Transaction proof request parameters
 
 try:
     # Get transaction output proof
@@ -542,11 +542,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetTxOutProofRequest**](RequestsGetTxOutProofRequest.md)| Transaction proof request parameters | 
+ **body** | [**TransactionGetTxOutProofRequest**](TransactionGetTxOutProofRequest.md)| Transaction proof request parameters | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**GetTxOutProofResponse**](GetTxOutProofResponse.md)
 
 ### Authorization
 
@@ -560,7 +560,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tx_out_set_info**
-> InlineResponse20032 get_tx_out_set_info(body)
+> InlineResponse2002 get_tx_out_set_info(body)
 
 Get transaction output set information
 
@@ -582,7 +582,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetTxOutSetInfoRequest() # RequestsGetTxOutSetInfoRequest | UTXO set info request parameters
+body = satstream_python_sdk.TransactionGetTxOutSetInfoRequest() # TransactionGetTxOutSetInfoRequest | UTXO set info request parameters
 
 try:
     # Get transaction output set information
@@ -596,11 +596,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetTxOutSetInfoRequest**](RequestsGetTxOutSetInfoRequest.md)| UTXO set info request parameters | 
+ **body** | [**TransactionGetTxOutSetInfoRequest**](TransactionGetTxOutSetInfoRequest.md)| UTXO set info request parameters | 
 
 ### Return type
 
-[**InlineResponse20032**](InlineResponse20032.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -614,7 +614,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_tx_spending_prevout**
-> InlineResponse20034 get_tx_spending_prevout(body)
+> GetTxSpendingPrevoutResponse get_tx_spending_prevout(body)
 
 Get transaction spending prevout
 
@@ -636,7 +636,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetTxSpendingPrevoutRequest() # RequestsGetTxSpendingPrevoutRequest | Transaction spending prevout request
+body = satstream_python_sdk.TransactionGetTxSpendingPrevoutRequest() # TransactionGetTxSpendingPrevoutRequest | Transaction spending prevout request
 
 try:
     # Get transaction spending prevout
@@ -650,11 +650,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetTxSpendingPrevoutRequest**](RequestsGetTxSpendingPrevoutRequest.md)| Transaction spending prevout request | 
+ **body** | [**TransactionGetTxSpendingPrevoutRequest**](TransactionGetTxSpendingPrevoutRequest.md)| Transaction spending prevout request | 
 
 ### Return type
 
-[**InlineResponse20034**](InlineResponse20034.md)
+[**GetTxSpendingPrevoutResponse**](GetTxSpendingPrevoutResponse.md)
 
 ### Authorization
 
@@ -668,7 +668,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **send_raw_transaction**
-> InlineResponse2001 send_raw_transaction(body)
+> SendRawTransactionResponse send_raw_transaction(body)
 
 Send raw transaction
 
@@ -690,7 +690,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsSendRawTransactionRequest() # RequestsSendRawTransactionRequest | Raw transaction to send
+body = satstream_python_sdk.TransactionSendRawTransactionRequest() # TransactionSendRawTransactionRequest | Raw transaction to send
 
 try:
     # Send raw transaction
@@ -704,11 +704,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsSendRawTransactionRequest**](RequestsSendRawTransactionRequest.md)| Raw transaction to send | 
+ **body** | [**TransactionSendRawTransactionRequest**](TransactionSendRawTransactionRequest.md)| Raw transaction to send | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**SendRawTransactionResponse**](SendRawTransactionResponse.md)
 
 ### Authorization
 
@@ -722,7 +722,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **verify_tx_out_proof**
-> InlineResponse20033 verify_tx_out_proof(body)
+> VerifyTxOutProofResponse verify_tx_out_proof(body)
 
 Verify transaction output proof
 
@@ -744,7 +744,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsVerifyTxOutProofRequest() # RequestsVerifyTxOutProofRequest | Proof to verify
+body = satstream_python_sdk.TransactionVerifyTxOutProofRequest() # TransactionVerifyTxOutProofRequest | Proof to verify
 
 try:
     # Verify transaction output proof
@@ -758,11 +758,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsVerifyTxOutProofRequest**](RequestsVerifyTxOutProofRequest.md)| Proof to verify | 
+ **body** | [**TransactionVerifyTxOutProofRequest**](TransactionVerifyTxOutProofRequest.md)| Proof to verify | 
 
 ### Return type
 
-[**InlineResponse20033**](InlineResponse20033.md)
+[**VerifyTxOutProofResponse**](VerifyTxOutProofResponse.md)
 
 ### Authorization
 

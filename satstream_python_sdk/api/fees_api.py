@@ -42,8 +42,8 @@ class FeesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsEstimateRawFeeRequest body: Fee estimation parameters (required)
-        :return: InlineResponse20011
+        :param EstimateRawFeeRequest body: Fee estimation parameters (required)
+        :return: EstimateRawFeeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -64,8 +64,8 @@ class FeesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsEstimateRawFeeRequest body: Fee estimation parameters (required)
-        :return: InlineResponse20011
+        :param EstimateRawFeeRequest body: Fee estimation parameters (required)
+        :return: EstimateRawFeeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,7 +123,7 @@ class FeesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20011',  # noqa: E501
+            response_type='EstimateRawFeeResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -141,8 +141,8 @@ class FeesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsEstimateSmartFeeRequest body: Fee estimation parameters (required)
-        :return: InlineResponse20012
+        :param EstimateSmartFeeRequest body: Fee estimation parameters (required)
+        :return: EstimateSmartFeeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -163,8 +163,8 @@ class FeesApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsEstimateSmartFeeRequest body: Fee estimation parameters (required)
-        :return: InlineResponse20012
+        :param EstimateSmartFeeRequest body: Fee estimation parameters (required)
+        :return: EstimateSmartFeeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -222,7 +222,7 @@ class FeesApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20012',  # noqa: E501
+            response_type='EstimateSmartFeeResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**get_status**](StatusApi.md#get_status) | **GET** /status | Get server status
 
 # **get_status**
-> InlineResponse20030 get_status()
+> GetStatusResponse get_status()
 
 Get server status
 
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20030**](InlineResponse20030.md)
+[**GetStatusResponse**](GetStatusResponse.md)
 
 ### Authorization
 

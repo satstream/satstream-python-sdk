@@ -42,8 +42,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCombineRawTransactionRequest body: Array of hex-encoded raw transactions (required)
-        :return: InlineResponse2001
+        :param TransactionCombineRawTransactionRequest body: Array of hex-encoded raw transactions (required)
+        :return: CombineRawTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -64,8 +64,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCombineRawTransactionRequest body: Array of hex-encoded raw transactions (required)
-        :return: InlineResponse2001
+        :param TransactionCombineRawTransactionRequest body: Array of hex-encoded raw transactions (required)
+        :return: CombineRawTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,7 +123,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='CombineRawTransactionResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -141,8 +141,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsConvertToPSBTRequest body: Raw transaction conversion parameters (required)
-        :return: InlineResponse2001
+        :param TransactionConvertToPSBTRequest body: Raw transaction conversion parameters (required)
+        :return: ConvertToPSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -163,8 +163,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsConvertToPSBTRequest body: Raw transaction conversion parameters (required)
-        :return: InlineResponse2001
+        :param TransactionConvertToPSBTRequest body: Raw transaction conversion parameters (required)
+        :return: ConvertToPSBTResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -222,7 +222,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='ConvertToPSBTResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -240,8 +240,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCreateRawTxRequest body: Transaction parameters (required)
-        :return: InlineResponse2001
+        :param TransactionCreateRawTxRequest body: Transaction parameters (required)
+        :return: CreateRawTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -262,8 +262,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsCreateRawTxRequest body: Transaction parameters (required)
-        :return: InlineResponse2001
+        :param TransactionCreateRawTxRequest body: Transaction parameters (required)
+        :return: CreateRawTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -321,7 +321,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='CreateRawTransactionResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -340,7 +340,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20036
+        :return: DecodeTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -362,7 +362,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20036
+        :return: DecodeTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -416,7 +416,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20036',  # noqa: E501
+            response_type='DecodeTransactionResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -435,7 +435,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20037
+        :return: GetRawTransactionDecodedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -457,7 +457,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20037
+        :return: GetRawTransactionDecodedResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -511,7 +511,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20037',  # noqa: E501
+            response_type='GetRawTransactionDecodedResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -530,7 +530,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse2001
+        :return: GetRawTransactionHexResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -552,7 +552,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse2001
+        :return: GetRawTransactionHexResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -606,7 +606,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='GetRawTransactionHexResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -625,7 +625,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20038
+        :return: GetRawTransactionPrevoutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -647,7 +647,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20038
+        :return: GetRawTransactionPrevoutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -701,7 +701,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20038',  # noqa: E501
+            response_type='GetRawTransactionPrevoutResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -720,7 +720,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20035
+        :return: GetTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -742,7 +742,7 @@ class TransactionsApi(object):
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: InlineResponse20035
+        :return: GetTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -796,7 +796,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20035',  # noqa: E501
+            response_type='GetTransactionResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -814,8 +814,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxOutRequest body: Transaction output request parameters (required)
-        :return: InlineResponse20031
+        :param TransactionGetTxOutRequest body: Transaction output request parameters (required)
+        :return: GetTxOutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -836,8 +836,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxOutRequest body: Transaction output request parameters (required)
-        :return: InlineResponse20031
+        :param TransactionGetTxOutRequest body: Transaction output request parameters (required)
+        :return: GetTxOutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -895,7 +895,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20031',  # noqa: E501
+            response_type='GetTxOutResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -913,8 +913,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxOutProofRequest body: Transaction proof request parameters (required)
-        :return: InlineResponse2001
+        :param TransactionGetTxOutProofRequest body: Transaction proof request parameters (required)
+        :return: GetTxOutProofResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -935,8 +935,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxOutProofRequest body: Transaction proof request parameters (required)
-        :return: InlineResponse2001
+        :param TransactionGetTxOutProofRequest body: Transaction proof request parameters (required)
+        :return: GetTxOutProofResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -994,7 +994,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='GetTxOutProofResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1012,8 +1012,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxOutSetInfoRequest body: UTXO set info request parameters (required)
-        :return: InlineResponse20032
+        :param TransactionGetTxOutSetInfoRequest body: UTXO set info request parameters (required)
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1034,8 +1034,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxOutSetInfoRequest body: UTXO set info request parameters (required)
-        :return: InlineResponse20032
+        :param TransactionGetTxOutSetInfoRequest body: UTXO set info request parameters (required)
+        :return: InlineResponse2002
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1093,7 +1093,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20032',  # noqa: E501
+            response_type='InlineResponse2002',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1111,8 +1111,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxSpendingPrevoutRequest body: Transaction spending prevout request (required)
-        :return: InlineResponse20034
+        :param TransactionGetTxSpendingPrevoutRequest body: Transaction spending prevout request (required)
+        :return: GetTxSpendingPrevoutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1133,8 +1133,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetTxSpendingPrevoutRequest body: Transaction spending prevout request (required)
-        :return: InlineResponse20034
+        :param TransactionGetTxSpendingPrevoutRequest body: Transaction spending prevout request (required)
+        :return: GetTxSpendingPrevoutResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1192,7 +1192,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20034',  # noqa: E501
+            response_type='GetTxSpendingPrevoutResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1210,8 +1210,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsSendRawTransactionRequest body: Raw transaction to send (required)
-        :return: InlineResponse2001
+        :param TransactionSendRawTransactionRequest body: Raw transaction to send (required)
+        :return: SendRawTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1232,8 +1232,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsSendRawTransactionRequest body: Raw transaction to send (required)
-        :return: InlineResponse2001
+        :param TransactionSendRawTransactionRequest body: Raw transaction to send (required)
+        :return: SendRawTransactionResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1291,7 +1291,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
+            response_type='SendRawTransactionResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1309,8 +1309,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsVerifyTxOutProofRequest body: Proof to verify (required)
-        :return: InlineResponse20033
+        :param TransactionVerifyTxOutProofRequest body: Proof to verify (required)
+        :return: VerifyTxOutProofResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1331,8 +1331,8 @@ class TransactionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsVerifyTxOutProofRequest body: Proof to verify (required)
-        :return: InlineResponse20033
+        :param TransactionVerifyTxOutProofRequest body: Proof to verify (required)
+        :return: VerifyTxOutProofResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1390,7 +1390,7 @@ class TransactionsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20033',  # noqa: E501
+            response_type='VerifyTxOutProofResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

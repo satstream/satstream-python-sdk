@@ -42,7 +42,7 @@ class MiningApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20021
+        :return: GetMiningInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class MiningApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20021
+        :return: GetMiningInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -111,7 +111,7 @@ class MiningApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20021',  # noqa: E501
+            response_type='GetMiningInfoResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -129,8 +129,8 @@ class MiningApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetNetworkHashPSRequest body: Network hash rate parameters (required)
-        :return: InlineResponse2009
+        :param GetNetworkHashPSRequest body: Network hash rate parameters (required)
+        :return: GetNetworkHashPSResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -151,8 +151,8 @@ class MiningApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetNetworkHashPSRequest body: Network hash rate parameters (required)
-        :return: InlineResponse2009
+        :param GetNetworkHashPSRequest body: Network hash rate parameters (required)
+        :return: GetNetworkHashPSResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -210,7 +210,7 @@ class MiningApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse2009',  # noqa: E501
+            response_type='GetNetworkHashPSResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

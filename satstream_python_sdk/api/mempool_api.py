@@ -42,8 +42,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetMempoolAncestorsRequest body: Mempool ancestors request parameters (required)
-        :return: InlineResponse20016
+        :param GetMempoolAncestorsRequest body: Mempool ancestors request parameters (required)
+        :return: GetMempoolAncestorsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -64,8 +64,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetMempoolAncestorsRequest body: Mempool ancestors request parameters (required)
-        :return: InlineResponse20016
+        :param GetMempoolAncestorsRequest body: Mempool ancestors request parameters (required)
+        :return: GetMempoolAncestorsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,7 +123,7 @@ class MempoolApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20016',  # noqa: E501
+            response_type='GetMempoolAncestorsResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -141,8 +141,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetMempoolDescendantsRequest body: Mempool descendants request parameters (required)
-        :return: InlineResponse20017
+        :param GetMempoolDescendantsRequest body: Mempool descendants request parameters (required)
+        :return: GetMempoolDescendantsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -163,8 +163,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetMempoolDescendantsRequest body: Mempool descendants request parameters (required)
-        :return: InlineResponse20017
+        :param GetMempoolDescendantsRequest body: Mempool descendants request parameters (required)
+        :return: GetMempoolDescendantsResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -222,7 +222,7 @@ class MempoolApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20017',  # noqa: E501
+            response_type='GetMempoolDescendantsResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -240,7 +240,7 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20018
+        :return: GetMempoolInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -261,7 +261,7 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponse20018
+        :return: GetMempoolInfoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -309,7 +309,7 @@ class MempoolApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20018',  # noqa: E501
+            response_type='GetMempoolInfoResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -327,8 +327,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetRawMempoolRequest body: Raw mempool request parameters (required)
-        :return: InlineResponse20019
+        :param GetRawMempoolRequest body: Raw mempool request parameters (required)
+        :return: GetRawMempoolResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -349,8 +349,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsGetRawMempoolRequest body: Raw mempool request parameters (required)
-        :return: InlineResponse20019
+        :param GetRawMempoolRequest body: Raw mempool request parameters (required)
+        :return: GetRawMempoolResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -408,7 +408,7 @@ class MempoolApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20019',  # noqa: E501
+            response_type='GetRawMempoolResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -426,8 +426,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsTestMempoolAcceptRequest body: Raw transactions to test (required)
-        :return: InlineResponse20020
+        :param TestMempoolAcceptRequest body: Raw transactions to test (required)
+        :return: TestMempoolAcceptResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -448,8 +448,8 @@ class MempoolApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param RequestsTestMempoolAcceptRequest body: Raw transactions to test (required)
-        :return: InlineResponse20020
+        :param TestMempoolAcceptRequest body: Raw transactions to test (required)
+        :return: TestMempoolAcceptResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -507,7 +507,7 @@ class MempoolApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponse20020',  # noqa: E501
+            response_type='TestMempoolAcceptResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

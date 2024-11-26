@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**join_psbts**](PSBTsApi.md#join_psbts) | **POST** /psbt/join | Join PSBTs
 
 # **analyze_psbt**
-> InlineResponse20024 analyze_psbt(body)
+> AnalyzePSBTResponse analyze_psbt(body)
 
 Analyze PSBT
 
@@ -33,7 +33,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.PSBTsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsAnalyzePSBTRequest() # RequestsAnalyzePSBTRequest | PSBT to analyze
+body = satstream_python_sdk.AnalyzePSBTRequest() # AnalyzePSBTRequest | PSBT to analyze
 
 try:
     # Analyze PSBT
@@ -47,11 +47,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsAnalyzePSBTRequest**](RequestsAnalyzePSBTRequest.md)| PSBT to analyze | 
+ **body** | [**AnalyzePSBTRequest**](AnalyzePSBTRequest.md)| PSBT to analyze | 
 
 ### Return type
 
-[**InlineResponse20024**](InlineResponse20024.md)
+[**AnalyzePSBTResponse**](AnalyzePSBTResponse.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **combine_psbt**
-> InlineResponse2001 combine_psbt(body)
+> CombinePSBTResponse combine_psbt(body)
 
 Combine PSBTs
 
@@ -87,7 +87,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.PSBTsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsCombinePSBTRequest() # RequestsCombinePSBTRequest | Array of PSBTs to combine
+body = satstream_python_sdk.CombinePSBTRequest() # CombinePSBTRequest | Array of PSBTs to combine
 
 try:
     # Combine PSBTs
@@ -101,11 +101,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsCombinePSBTRequest**](RequestsCombinePSBTRequest.md)| Array of PSBTs to combine | 
+ **body** | [**CombinePSBTRequest**](CombinePSBTRequest.md)| Array of PSBTs to combine | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**CombinePSBTResponse**](CombinePSBTResponse.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_psbt**
-> InlineResponse2001 create_psbt(body)
+> CreatePSBTResponse create_psbt(body)
 
 Create PSBT
 
@@ -141,7 +141,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.PSBTsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsCreatePSBTRequest() # RequestsCreatePSBTRequest | Transaction parameters
+body = satstream_python_sdk.CreatePSBTRequest() # CreatePSBTRequest | Transaction parameters
 
 try:
     # Create PSBT
@@ -155,11 +155,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsCreatePSBTRequest**](RequestsCreatePSBTRequest.md)| Transaction parameters | 
+ **body** | [**CreatePSBTRequest**](CreatePSBTRequest.md)| Transaction parameters | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**CreatePSBTResponse**](CreatePSBTResponse.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **decode_psbt**
-> InlineResponse20025 decode_psbt(body)
+> DecodePSBTResponse decode_psbt(body)
 
 Decode PSBT
 
@@ -195,7 +195,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.PSBTsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsAnalyzePSBTRequest() # RequestsAnalyzePSBTRequest | PSBT to decode
+body = satstream_python_sdk.DecodePSBTRequest() # DecodePSBTRequest | PSBT to decode
 
 try:
     # Decode PSBT
@@ -209,11 +209,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsAnalyzePSBTRequest**](RequestsAnalyzePSBTRequest.md)| PSBT to decode | 
+ **body** | [**DecodePSBTRequest**](DecodePSBTRequest.md)| PSBT to decode | 
 
 ### Return type
 
-[**InlineResponse20025**](InlineResponse20025.md)
+[**DecodePSBTResponse**](DecodePSBTResponse.md)
 
 ### Authorization
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **join_psbts**
-> InlineResponse2001 join_psbts(body)
+> JoinPSBTsResponse join_psbts(body)
 
 Join PSBTs
 
@@ -249,7 +249,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.PSBTsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsJoinPSBTsRequest() # RequestsJoinPSBTsRequest | PSBTs to join
+body = satstream_python_sdk.JoinPSBTsRequest() # JoinPSBTsRequest | PSBTs to join
 
 try:
     # Join PSBTs
@@ -263,11 +263,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsJoinPSBTsRequest**](RequestsJoinPSBTsRequest.md)| PSBTs to join | 
+ **body** | [**JoinPSBTsRequest**](JoinPSBTsRequest.md)| PSBTs to join | 
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**JoinPSBTsResponse**](JoinPSBTsResponse.md)
 
 ### Authorization
 

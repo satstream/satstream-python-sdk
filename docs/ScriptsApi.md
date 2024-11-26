@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**decode_script**](ScriptsApi.md#decode_script) | **POST** /script/decode | Decode Script
 
 # **decode_script**
-> InlineResponse20029 decode_script(body)
+> DecodeScriptResponse decode_script(body)
 
 Decode Script
 
@@ -29,7 +29,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.ScriptsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsDecodeScriptRequest() # RequestsDecodeScriptRequest | Script to decode
+body = satstream_python_sdk.DecodeScriptRequest() # DecodeScriptRequest | Script to decode
 
 try:
     # Decode Script
@@ -43,11 +43,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsDecodeScriptRequest**](RequestsDecodeScriptRequest.md)| Script to decode | 
+ **body** | [**DecodeScriptRequest**](DecodeScriptRequest.md)| Script to decode | 
 
 ### Return type
 
-[**InlineResponse20029**](InlineResponse20029.md)
+[**DecodeScriptResponse**](DecodeScriptResponse.md)
 
 ### Authorization
 

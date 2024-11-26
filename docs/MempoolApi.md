@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**test_mempool_accept**](MempoolApi.md#test_mempool_accept) | **POST** /mempool/test-accept | Test mempool accept
 
 # **get_mempool_ancestors**
-> InlineResponse20016 get_mempool_ancestors(body)
+> GetMempoolAncestorsResponse get_mempool_ancestors(body)
 
 Get mempool ancestors
 
@@ -33,7 +33,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.MempoolApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetMempoolAncestorsRequest() # RequestsGetMempoolAncestorsRequest | Mempool ancestors request parameters
+body = satstream_python_sdk.GetMempoolAncestorsRequest() # GetMempoolAncestorsRequest | Mempool ancestors request parameters
 
 try:
     # Get mempool ancestors
@@ -47,11 +47,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetMempoolAncestorsRequest**](RequestsGetMempoolAncestorsRequest.md)| Mempool ancestors request parameters | 
+ **body** | [**GetMempoolAncestorsRequest**](GetMempoolAncestorsRequest.md)| Mempool ancestors request parameters | 
 
 ### Return type
 
-[**InlineResponse20016**](InlineResponse20016.md)
+[**GetMempoolAncestorsResponse**](GetMempoolAncestorsResponse.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_mempool_descendants**
-> InlineResponse20017 get_mempool_descendants(body)
+> GetMempoolDescendantsResponse get_mempool_descendants(body)
 
 Get mempool descendants
 
@@ -87,7 +87,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.MempoolApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetMempoolDescendantsRequest() # RequestsGetMempoolDescendantsRequest | Mempool descendants request parameters
+body = satstream_python_sdk.GetMempoolDescendantsRequest() # GetMempoolDescendantsRequest | Mempool descendants request parameters
 
 try:
     # Get mempool descendants
@@ -101,11 +101,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetMempoolDescendantsRequest**](RequestsGetMempoolDescendantsRequest.md)| Mempool descendants request parameters | 
+ **body** | [**GetMempoolDescendantsRequest**](GetMempoolDescendantsRequest.md)| Mempool descendants request parameters | 
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**GetMempoolDescendantsResponse**](GetMempoolDescendantsResponse.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_mempool_info**
-> InlineResponse20018 get_mempool_info()
+> GetMempoolInfoResponse get_mempool_info()
 
 Get mempool information
 
@@ -155,7 +155,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**GetMempoolInfoResponse**](GetMempoolInfoResponse.md)
 
 ### Authorization
 
@@ -169,7 +169,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_raw_mempool**
-> InlineResponse20019 get_raw_mempool(body)
+> GetRawMempoolResponse get_raw_mempool(body)
 
 Get raw mempool
 
@@ -191,7 +191,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.MempoolApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsGetRawMempoolRequest() # RequestsGetRawMempoolRequest | Raw mempool request parameters
+body = satstream_python_sdk.GetRawMempoolRequest() # GetRawMempoolRequest | Raw mempool request parameters
 
 try:
     # Get raw mempool
@@ -205,11 +205,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsGetRawMempoolRequest**](RequestsGetRawMempoolRequest.md)| Raw mempool request parameters | 
+ **body** | [**GetRawMempoolRequest**](GetRawMempoolRequest.md)| Raw mempool request parameters | 
 
 ### Return type
 
-[**InlineResponse20019**](InlineResponse20019.md)
+[**GetRawMempoolResponse**](GetRawMempoolResponse.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **test_mempool_accept**
-> InlineResponse20020 test_mempool_accept(body)
+> TestMempoolAcceptResponse test_mempool_accept(body)
 
 Test mempool accept
 
@@ -245,7 +245,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.MempoolApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsTestMempoolAcceptRequest() # RequestsTestMempoolAcceptRequest | Raw transactions to test
+body = satstream_python_sdk.TestMempoolAcceptRequest() # TestMempoolAcceptRequest | Raw transactions to test
 
 try:
     # Test mempool accept
@@ -259,11 +259,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsTestMempoolAcceptRequest**](RequestsTestMempoolAcceptRequest.md)| Raw transactions to test | 
+ **body** | [**TestMempoolAcceptRequest**](TestMempoolAcceptRequest.md)| Raw transactions to test | 
 
 ### Return type
 
-[**InlineResponse20020**](InlineResponse20020.md)
+[**TestMempoolAcceptResponse**](TestMempoolAcceptResponse.md)
 
 ### Authorization
 

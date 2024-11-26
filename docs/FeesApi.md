@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**estimate_smart_fee**](FeesApi.md#estimate_smart_fee) | **POST** /fee/estimate-smart | Estimate smart fee
 
 # **estimate_raw_fee**
-> InlineResponse20011 estimate_raw_fee(body)
+> EstimateRawFeeResponse estimate_raw_fee(body)
 
 Estimate Raw Fee
 
@@ -30,7 +30,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.FeesApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsEstimateRawFeeRequest() # RequestsEstimateRawFeeRequest | Fee estimation parameters
+body = satstream_python_sdk.EstimateRawFeeRequest() # EstimateRawFeeRequest | Fee estimation parameters
 
 try:
     # Estimate Raw Fee
@@ -44,11 +44,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsEstimateRawFeeRequest**](RequestsEstimateRawFeeRequest.md)| Fee estimation parameters | 
+ **body** | [**EstimateRawFeeRequest**](EstimateRawFeeRequest.md)| Fee estimation parameters | 
 
 ### Return type
 
-[**InlineResponse20011**](InlineResponse20011.md)
+[**EstimateRawFeeResponse**](EstimateRawFeeResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **estimate_smart_fee**
-> InlineResponse20012 estimate_smart_fee(body)
+> EstimateSmartFeeResponse estimate_smart_fee(body)
 
 Estimate smart fee
 
@@ -84,7 +84,7 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.FeesApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.RequestsEstimateSmartFeeRequest() # RequestsEstimateSmartFeeRequest | Fee estimation parameters
+body = satstream_python_sdk.EstimateSmartFeeRequest() # EstimateSmartFeeRequest | Fee estimation parameters
 
 try:
     # Estimate smart fee
@@ -98,11 +98,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**RequestsEstimateSmartFeeRequest**](RequestsEstimateSmartFeeRequest.md)| Fee estimation parameters | 
+ **body** | [**EstimateSmartFeeRequest**](EstimateSmartFeeRequest.md)| Fee estimation parameters | 
 
 ### Return type
 
-[**InlineResponse20012**](InlineResponse20012.md)
+[**EstimateSmartFeeResponse**](EstimateSmartFeeResponse.md)
 
 ### Authorization
 
