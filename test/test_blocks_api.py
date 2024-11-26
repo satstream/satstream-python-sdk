@@ -31,28 +31,7 @@ class TestBlocksApi(unittest.TestCase):
     def test_get_block_by_hash(self):
         """Test case for get_block_by_hash
 
-        Get block by hash  # noqa: E501
-        """
-        pass
-
-    def test_get_block_info(self):
-        """Test case for get_block_info
-
-        Get block info  # noqa: E501
-        """
-        pass
-
-    def test_get_block_transactions(self):
-        """Test case for get_block_transactions
-
-        Get block transactions  # noqa: E501
-        """
-        pass
-
-    def test_get_current_block_height(self):
-        """Test case for get_current_block_height
-
-        Get current block height  # noqa: E501
+        Get block info by hash  # noqa: E501
         """
         pass
 
