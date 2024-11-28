@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "satstream_python_sdk"
-VERSION = "1.0.26"
+VERSION = "1.0.32"
 # To install the library, run the following
 #
 # python setup.py install
@@ -27,12 +27,13 @@ setup(
     name=NAME,
     version=VERSION,
     description="Satstream API",
-    license="MIT",
     author_email="team@satstream.io",
     url="https://github.com/satstream/satstream-python-sdk",
-    keywords=["Satstream API"],
+    keywords=["Swagger", "Satstream API"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown")
+    long_description="""\
+    Satstream API  # noqa: E501
+    """
+)
