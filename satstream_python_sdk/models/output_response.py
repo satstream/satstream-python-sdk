@@ -32,7 +32,7 @@ class OutputResponse(object):
         'indexed': 'bool',
         'inscriptions': 'list[str]',
         'outpoint': 'str',
-        'runes': 'dict(str, str)',
+        'runes': 'dict(str, GithubComSatstreamSsUtilsOrdServerResponsesRuneDetails)',
         'sat_ranges': 'list[list[int]]',
         'script_pubkey': 'str',
         'spent': 'bool',
@@ -177,7 +177,7 @@ class OutputResponse(object):
 
 
         :return: The runes of this OutputResponse.  # noqa: E501
-        :rtype: dict(str, str)
+        :rtype: dict(str, GithubComSatstreamSsUtilsOrdServerResponsesRuneDetails)
         """
         return self._runes
 
@@ -187,7 +187,7 @@ class OutputResponse(object):
 
 
         :param runes: The runes of this OutputResponse.  # noqa: E501
-        :type: dict(str, str)
+        :type: dict(str, GithubComSatstreamSsUtilsOrdServerResponsesRuneDetails)
         """
 
         self._runes = runes

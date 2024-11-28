@@ -30,7 +30,7 @@ class CreatePSBTRequest(object):
     swagger_types = {
         'inputs': 'list[CreatePSBTInput]',
         'locktime': 'int',
-        'outputs': 'list[CreatePSBTOutput]',
+        'outputs': 'list[dict(str, object)]',
         'replaceable': 'bool'
     }
 
@@ -107,10 +107,10 @@ class CreatePSBTRequest(object):
     def outputs(self):
         """Gets the outputs of this CreatePSBTRequest.  # noqa: E501
 
-        The outputs for the transaction (each address can only appear once)  # noqa: E501
+        The outputs (address:amount pairs or {\"data\":\"hex\"})  # noqa: E501
 
         :return: The outputs of this CreatePSBTRequest.  # noqa: E501
-        :rtype: list[CreatePSBTOutput]
+        :rtype: list[dict(str, object)]
         """
         return self._outputs
 
@@ -118,10 +118,10 @@ class CreatePSBTRequest(object):
     def outputs(self, outputs):
         """Sets the outputs of this CreatePSBTRequest.
 
-        The outputs for the transaction (each address can only appear once)  # noqa: E501
+        The outputs (address:amount pairs or {\"data\":\"hex\"})  # noqa: E501
 
         :param outputs: The outputs of this CreatePSBTRequest.  # noqa: E501
-        :type: list[CreatePSBTOutput]
+        :type: list[dict(str, object)]
         """
         if outputs is None:
             raise ValueError("Invalid value for `outputs`, must not be `None`")  # noqa: E501

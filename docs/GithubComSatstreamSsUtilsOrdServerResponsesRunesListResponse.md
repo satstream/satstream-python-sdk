@@ -1,9 +1,9 @@
-# RunesListResponse
+# GithubComSatstreamSsUtilsOrdServerResponsesRunesListResponse
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entries** | [**list[RuneListEntry]**](RuneListEntry.md) |  | [optional] 
+**entries** | [**list[GithubComSatstreamSsUtilsOrdServerResponsesRuneListEntry]**](GithubComSatstreamSsUtilsOrdServerResponsesRuneListEntry.md) |  | [optional] 
 **more** | **bool** |  | [optional] 
 **next** | **int** |  | [optional] 
 **prev** | **int** |  | [optional] 

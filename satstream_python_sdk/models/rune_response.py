@@ -28,55 +28,29 @@ class RuneResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'entry': 'RuneEntry',
         'id': 'str',
         'mintable': 'bool',
         'parent': 'str'
     }
 
     attribute_map = {
-        'entry': 'entry',
         'id': 'id',
         'mintable': 'mintable',
         'parent': 'parent'
     }
 
-    def __init__(self, entry=None, id=None, mintable=None, parent=None):  # noqa: E501
+    def __init__(self, id=None, mintable=None, parent=None):  # noqa: E501
         """RuneResponse - a model defined in Swagger"""  # noqa: E501
-        self._entry = None
         self._id = None
         self._mintable = None
         self._parent = None
         self.discriminator = None
-        if entry is not None:
-            self.entry = entry
         if id is not None:
             self.id = id
         if mintable is not None:
             self.mintable = mintable
         if parent is not None:
             self.parent = parent
-
-    @property
-    def entry(self):
-        """Gets the entry of this RuneResponse.  # noqa: E501
-
-
-        :return: The entry of this RuneResponse.  # noqa: E501
-        :rtype: RuneEntry
-        """
-        return self._entry
-
-    @entry.setter
-    def entry(self, entry):
-        """Sets the entry of this RuneResponse.
-
-
-        :param entry: The entry of this RuneResponse.  # noqa: E501
-        :type: RuneEntry
-        """
-
-        self._entry = entry
 
     @property
     def id(self):

@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import satstream_python_sdk
-from satstream_python_sdk.models.get_transaction_response import GetTransactionResponse  # noqa: E501
+from satstream_python_sdk.models.get_raw_transaction_decode_response import GetRawTransactionDecodeResponse  # noqa: E501
 from satstream_python_sdk.rest import ApiException
 
 
-class TestGetTransactionResponse(unittest.TestCase):
-    """GetTransactionResponse unit test stubs"""
+class TestGetRawTransactionDecodeResponse(unittest.TestCase):
+    """GetRawTransactionDecodeResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestGetTransactionResponse(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testGetTransactionResponse(self):
-        """Test GetTransactionResponse"""
+    def testGetRawTransactionDecodeResponse(self):
+        """Test GetRawTransactionDecodeResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream_python_sdk.models.get_transaction_response.GetTransactionResponse()  # noqa: E501
+        # model = satstream_python_sdk.models.get_raw_transaction_decode_response.GetRawTransactionDecodeResponse()  # noqa: E501
         pass
 
 

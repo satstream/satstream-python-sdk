@@ -9,7 +9,6 @@ Method | HTTP request | Description
 [**get_address_rune_deltas**](AddressesApi.md#get_address_rune_deltas) | **GET** /address/{address}/deltas/runes | Get address rune deltas
 [**get_address_utxos**](AddressesApi.md#get_address_utxos) | **GET** /address/{address}/outputs | Get UTXOs for an address
 [**validate_address**](AddressesApi.md#validate_address) | **GET** /address/{address}/validate | Validate address
-[**verify_message**](AddressesApi.md#verify_message) | **POST** /address/verify-message | Verify message
 
 # **get_address**
 > GetAddressResponse get_address(address)
@@ -295,60 +294,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **verify_message**
-> VerifyMessageResponse verify_message(body)
-
-Verify message
-
-Verifies a signed message
-
-### Example
-```python
-from __future__ import print_function
-import time
-import satstream_python_sdk
-from satstream_python_sdk.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: ApiKeyAuth
-configuration = satstream_python_sdk.Configuration()
-configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.VerifyMessageRequest() # VerifyMessageRequest | Message verification parameters
-
-try:
-    # Verify message
-    api_response = api_instance.verify_message(body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling AddressesApi->verify_message: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**VerifyMessageRequest**](VerifyMessageRequest.md)| Message verification parameters | 
-
-### Return type
-
-[**VerifyMessageResponse**](VerifyMessageResponse.md)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entry** | [**RuneEntry**](RuneEntry.md) |  | [optional] 
 **id** | **str** |  | [optional] 
 **mintable** | **bool** |  | [optional] 
 **parent** | **str** |  | [optional] 

@@ -49,15 +49,15 @@ class TestTransactionsApi(unittest.TestCase):
         """
         pass
 
-    def test_decode_tx(self):
-        """Test case for decode_tx
+    def test_decode_tx_inscriptions(self):
+        """Test case for decode_tx_inscriptions
 
-        Decode a transaction  # noqa: E501
+        Decode transaction inscriptions  # noqa: E501
         """
         pass
 
-    def test_get_raw_transaction_decoded(self):
-        """Test case for get_raw_transaction_decoded
+    def test_get_raw_transaction(self):
+        """Test case for get_raw_transaction
 
         Get raw transaction (verbosity 1)  # noqa: E501
         """
@@ -73,14 +73,7 @@ class TestTransactionsApi(unittest.TestCase):
     def test_get_raw_transaction_prevout(self):
         """Test case for get_raw_transaction_prevout
 
-        Get raw transaction (verbosity 2)  # noqa: E501
-        """
-        pass
-
-    def test_get_transaction(self):
-        """Test case for get_transaction
-
-        Get transaction info  # noqa: E501
+        Get raw transaction with prevouts (verbosity 2)  # noqa: E501
         """
         pass
 

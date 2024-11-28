@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_latest_runes**](RunesApi.md#get_latest_runes) | **GET** /runes | Get latest runes
 [**get_latest_runes_page**](RunesApi.md#get_latest_runes_page) | **GET** /runes/{page} | Get latest runes page
-[**get_rune**](RunesApi.md#get_rune) | **GET** /rune/{rune_name} | Get rune info
+[**get_rune**](RunesApi.md#get_rune) | **GET** /rune/{identifier} | Get rune info
 
 # **get_latest_runes**
 > GetLatestRunesResponse get_latest_runes()
@@ -113,11 +113,11 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_rune**
-> GetRuneResponse get_rune(rune_name)
+> GetRuneResponse get_rune(identifier)
 
 Get rune info
 
-Retrieve information about a specific rune
+Retrieve information about a specific rune by name or ID (e.g., \"UNCOMMON•GOODS\" or \"1:0\")
 
 ### Example
 ```python
@@ -135,11 +135,11 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = satstream_python_sdk.RunesApi(satstream_python_sdk.ApiClient(configuration))
-rune_name = 'rune_name_example' # str | Rune Name
+identifier = 'identifier_example' # str | Rune Name or ID
 
 try:
     # Get rune info
-    api_response = api_instance.get_rune(rune_name)
+    api_response = api_instance.get_rune(identifier)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling RunesApi->get_rune: %s\n" % e)
@@ -149,7 +149,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rune_name** | **str**| Rune Name | 
+ **identifier** | **str**| Rune Name or ID | 
 
 ### Return type
 

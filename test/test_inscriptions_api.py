@@ -49,6 +49,13 @@ class TestInscriptionsApi(unittest.TestCase):
         """
         pass
 
+    def test_get_block_inscriptions_page(self):
+        """Test case for get_block_inscriptions_page
+
+        Get paginated inscriptions in a specific block  # noqa: E501
+        """
+        pass
+
     def test_get_inscription(self):
         """Test case for get_inscription
 

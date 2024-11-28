@@ -63,13 +63,6 @@ class TestAddressesApi(unittest.TestCase):
         """
         pass
 
-    def test_verify_message(self):
-        """Test case for verify_message
-
-        Verify message  # noqa: E501
-        """
-        pass
-
 
 if __name__ == '__main__':
     unittest.main()

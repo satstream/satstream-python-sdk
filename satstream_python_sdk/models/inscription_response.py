@@ -42,7 +42,7 @@ class InscriptionResponse(object):
         'parents': 'list[str]',
         'previous': 'str',
         'rune': 'str',
-        'sat': 'str',
+        'sat': 'int',
         'satpoint': 'str',
         'timestamp': 'int',
         'value': 'int'
@@ -427,7 +427,7 @@ class InscriptionResponse(object):
 
 
         :return: The sat of this InscriptionResponse.  # noqa: E501
-        :rtype: str
+        :rtype: int
         """
         return self._sat
 
@@ -437,7 +437,7 @@ class InscriptionResponse(object):
 
 
         :param sat: The sat of this InscriptionResponse.  # noqa: E501
-        :type: str
+        :type: int
         """
 
         self._sat = sat

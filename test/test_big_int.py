@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import satstream_python_sdk
-from satstream_python_sdk.models.rune_entry import RuneEntry  # noqa: E501
+from satstream_python_sdk.models.big_int import BigInt  # noqa: E501
 from satstream_python_sdk.rest import ApiException
 
 
-class TestRuneEntry(unittest.TestCase):
-    """RuneEntry unit test stubs"""
+class TestBigInt(unittest.TestCase):
+    """BigInt unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestRuneEntry(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testRuneEntry(self):
-        """Test RuneEntry"""
+    def testBigInt(self):
+        """Test BigInt"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = satstream_python_sdk.models.rune_entry.RuneEntry()  # noqa: E501
+        # model = satstream_python_sdk.models.big_int.BigInt()  # noqa: E501
         pass
 
 

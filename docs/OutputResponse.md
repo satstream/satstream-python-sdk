@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **indexed** | **bool** |  | [optional] 
 **inscriptions** | **list[str]** |  | [optional] 
 **outpoint** | **str** |  | [optional] 
-**runes** | **dict(str, str)** |  | [optional] 
+**runes** | [**dict(str, GithubComSatstreamSsUtilsOrdServerResponsesRuneDetails)**](GithubComSatstreamSsUtilsOrdServerResponsesRuneDetails.md) |  | [optional] 
 **sat_ranges** | **list[list[int]]** |  | [optional] 
 **script_pubkey** | **str** |  | [optional] 
 **spent** | **bool** |  | [optional] 

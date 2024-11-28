@@ -29,7 +29,7 @@ class GetLatestRunesResponse(object):
     """
     swagger_types = {
         'code': 'int',
-        'data': 'RunesListResponse',
+        'data': 'GithubComSatstreamSsUtilsOrdServerResponsesRunesListResponse',
         'msg': 'str'
     }
 
@@ -79,7 +79,7 @@ class GetLatestRunesResponse(object):
 
 
         :return: The data of this GetLatestRunesResponse.  # noqa: E501
-        :rtype: RunesListResponse
+        :rtype: GithubComSatstreamSsUtilsOrdServerResponsesRunesListResponse
         """
         return self._data
 
@@ -89,7 +89,7 @@ class GetLatestRunesResponse(object):
 
 
         :param data: The data of this GetLatestRunesResponse.  # noqa: E501
-        :type: RunesListResponse
+        :type: GithubComSatstreamSsUtilsOrdServerResponsesRunesListResponse
         """
 
         self._data = data

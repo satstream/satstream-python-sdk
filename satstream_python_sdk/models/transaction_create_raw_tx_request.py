@@ -30,7 +30,7 @@ class TransactionCreateRawTxRequest(object):
     swagger_types = {
         'inputs': 'list[TransactionCreateRawTxInput]',
         'locktime': 'int',
-        'outputs': 'list[TransactionCreateRawTxOutput]',
+        'outputs': 'list[dict(str, float)]',
         'replaceable': 'bool'
     }
 
@@ -110,7 +110,7 @@ class TransactionCreateRawTxRequest(object):
         The outputs for the transaction Each address can only appear once and there can only be one 'data' object  # noqa: E501
 
         :return: The outputs of this TransactionCreateRawTxRequest.  # noqa: E501
-        :rtype: list[TransactionCreateRawTxOutput]
+        :rtype: list[dict(str, float)]
         """
         return self._outputs
 
@@ -121,7 +121,7 @@ class TransactionCreateRawTxRequest(object):
         The outputs for the transaction Each address can only appear once and there can only be one 'data' object  # noqa: E501
 
         :param outputs: The outputs of this TransactionCreateRawTxRequest.  # noqa: E501
-        :type: list[TransactionCreateRawTxOutput]
+        :type: list[dict(str, float)]
         """
         if outputs is None:
             raise ValueError("Invalid value for `outputs`, must not be `None`")  # noqa: E501

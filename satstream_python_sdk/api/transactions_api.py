@@ -329,13 +329,13 @@ class TransactionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def decode_tx(self, txid, **kwargs):  # noqa: E501
-        """Decode a transaction  # noqa: E501
+    def decode_tx_inscriptions(self, txid, **kwargs):  # noqa: E501
+        """Decode transaction inscriptions  # noqa: E501
 
         Decodes a transaction and returns its inscriptions and runestone data  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.decode_tx(txid, async_req=True)
+        >>> thread = api.decode_tx_inscriptions(txid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -346,18 +346,18 @@ class TransactionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.decode_tx_with_http_info(txid, **kwargs)  # noqa: E501
+            return self.decode_tx_inscriptions_with_http_info(txid, **kwargs)  # noqa: E501
         else:
-            (data) = self.decode_tx_with_http_info(txid, **kwargs)  # noqa: E501
+            (data) = self.decode_tx_inscriptions_with_http_info(txid, **kwargs)  # noqa: E501
             return data
 
-    def decode_tx_with_http_info(self, txid, **kwargs):  # noqa: E501
-        """Decode a transaction  # noqa: E501
+    def decode_tx_inscriptions_with_http_info(self, txid, **kwargs):  # noqa: E501
+        """Decode transaction inscriptions  # noqa: E501
 
         Decodes a transaction and returns its inscriptions and runestone data  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.decode_tx_with_http_info(txid, async_req=True)
+        >>> thread = api.decode_tx_inscriptions_with_http_info(txid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -378,14 +378,14 @@ class TransactionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method decode_tx" % key
+                    " to method decode_tx_inscriptions" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'txid' is set
         if ('txid' not in params or
                 params['txid'] is None):
-            raise ValueError("Missing the required parameter `txid` when calling `decode_tx`")  # noqa: E501
+            raise ValueError("Missing the required parameter `txid` when calling `decode_tx_inscriptions`")  # noqa: E501
 
         collection_formats = {}
 
@@ -409,7 +409,7 @@ class TransactionsApi(object):
         auth_settings = ['ApiKeyAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/tx/{txid}/decode', 'GET',
+            '/tx/{txid}/inscriptions', 'GET',
             path_params,
             query_params,
             header_params,
@@ -424,40 +424,40 @@ class TransactionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_raw_transaction_decoded(self, txid, **kwargs):  # noqa: E501
+    def get_raw_transaction(self, txid, **kwargs):  # noqa: E501
         """Get raw transaction (verbosity 1)  # noqa: E501
 
-        Get raw transaction as a decoded object  # noqa: E501
+        Get raw transaction with basic decoded information  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_raw_transaction_decoded(txid, async_req=True)
+        >>> thread = api.get_raw_transaction(txid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: GetRawTransactionDecodedResponse
+        :return: GetRawTransactionDecodeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_raw_transaction_decoded_with_http_info(txid, **kwargs)  # noqa: E501
+            return self.get_raw_transaction_with_http_info(txid, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_raw_transaction_decoded_with_http_info(txid, **kwargs)  # noqa: E501
+            (data) = self.get_raw_transaction_with_http_info(txid, **kwargs)  # noqa: E501
             return data
 
-    def get_raw_transaction_decoded_with_http_info(self, txid, **kwargs):  # noqa: E501
+    def get_raw_transaction_with_http_info(self, txid, **kwargs):  # noqa: E501
         """Get raw transaction (verbosity 1)  # noqa: E501
 
-        Get raw transaction as a decoded object  # noqa: E501
+        Get raw transaction with basic decoded information  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_raw_transaction_decoded_with_http_info(txid, async_req=True)
+        >>> thread = api.get_raw_transaction_with_http_info(txid, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str txid: Transaction ID (required)
-        :return: GetRawTransactionDecodedResponse
+        :return: GetRawTransactionDecodeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -473,14 +473,14 @@ class TransactionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_raw_transaction_decoded" % key
+                    " to method get_raw_transaction" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'txid' is set
         if ('txid' not in params or
                 params['txid'] is None):
-            raise ValueError("Missing the required parameter `txid` when calling `get_raw_transaction_decoded`")  # noqa: E501
+            raise ValueError("Missing the required parameter `txid` when calling `get_raw_transaction`")  # noqa: E501
 
         collection_formats = {}
 
@@ -504,14 +504,14 @@ class TransactionsApi(object):
         auth_settings = ['ApiKeyAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/tx/{txid}/decoded', 'GET',
+            '/tx/{txid}/raw/decode', 'GET',
             path_params,
             query_params,
             header_params,
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='GetRawTransactionDecodedResponse',  # noqa: E501
+            response_type='GetRawTransactionDecodeResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -615,7 +615,7 @@ class TransactionsApi(object):
             collection_formats=collection_formats)
 
     def get_raw_transaction_prevout(self, txid, **kwargs):  # noqa: E501
-        """Get raw transaction (verbosity 2)  # noqa: E501
+        """Get raw transaction with prevouts (verbosity 2)  # noqa: E501
 
         Get raw transaction with prevout information  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -637,7 +637,7 @@ class TransactionsApi(object):
             return data
 
     def get_raw_transaction_prevout_with_http_info(self, txid, **kwargs):  # noqa: E501
-        """Get raw transaction (verbosity 2)  # noqa: E501
+        """Get raw transaction with prevouts (verbosity 2)  # noqa: E501
 
         Get raw transaction with prevout information  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -694,7 +694,7 @@ class TransactionsApi(object):
         auth_settings = ['ApiKeyAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/tx/{txid}/prevout', 'GET',
+            '/tx/{txid}/raw/prevout', 'GET',
             path_params,
             query_params,
             header_params,
@@ -702,101 +702,6 @@ class TransactionsApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='GetRawTransactionPrevoutResponse',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def get_transaction(self, txid, **kwargs):  # noqa: E501
-        """Get transaction info  # noqa: E501
-
-        Retrieve information about a specific transaction  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_transaction(txid, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str txid: Transaction ID (required)
-        :return: GetTransactionResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.get_transaction_with_http_info(txid, **kwargs)  # noqa: E501
-        else:
-            (data) = self.get_transaction_with_http_info(txid, **kwargs)  # noqa: E501
-            return data
-
-    def get_transaction_with_http_info(self, txid, **kwargs):  # noqa: E501
-        """Get transaction info  # noqa: E501
-
-        Retrieve information about a specific transaction  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_transaction_with_http_info(txid, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str txid: Transaction ID (required)
-        :return: GetTransactionResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['txid']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get_transaction" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'txid' is set
-        if ('txid' not in params or
-                params['txid'] is None):
-            raise ValueError("Missing the required parameter `txid` when calling `get_transaction`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'txid' in params:
-            path_params['txid'] = params['txid']  # noqa: E501
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['ApiKeyAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/tx/{txid}', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='GetTransactionResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

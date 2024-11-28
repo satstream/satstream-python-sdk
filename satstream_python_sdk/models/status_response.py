@@ -28,64 +28,38 @@ class StatusResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'address_index': 'bool',
         'blessed_inscriptions': 'int',
         'chain': 'str',
         'cursed_inscriptions': 'int',
         'height': 'int',
-        'initial_sync_time': 'Duration',
         'inscriptions': 'int',
         'lost_sats': 'int',
         'minimum_rune_for_next_block': 'str',
-        'rune_index': 'bool',
-        'runes': 'int',
-        'sat_index': 'bool',
-        'started': 'str',
-        'transaction_index': 'bool',
-        'unrecoverably_reorged': 'bool',
-        'uptime': 'Duration'
+        'runes': 'int'
     }
 
     attribute_map = {
-        'address_index': 'address_index',
         'blessed_inscriptions': 'blessed_inscriptions',
         'chain': 'chain',
         'cursed_inscriptions': 'cursed_inscriptions',
         'height': 'height',
-        'initial_sync_time': 'initial_sync_time',
         'inscriptions': 'inscriptions',
         'lost_sats': 'lost_sats',
         'minimum_rune_for_next_block': 'minimum_rune_for_next_block',
-        'rune_index': 'rune_index',
-        'runes': 'runes',
-        'sat_index': 'sat_index',
-        'started': 'started',
-        'transaction_index': 'transaction_index',
-        'unrecoverably_reorged': 'unrecoverably_reorged',
-        'uptime': 'uptime'
+        'runes': 'runes'
     }
 
-    def __init__(self, address_index=None, blessed_inscriptions=None, chain=None, cursed_inscriptions=None, height=None, initial_sync_time=None, inscriptions=None, lost_sats=None, minimum_rune_for_next_block=None, rune_index=None, runes=None, sat_index=None, started=None, transaction_index=None, unrecoverably_reorged=None, uptime=None):  # noqa: E501
+    def __init__(self, blessed_inscriptions=None, chain=None, cursed_inscriptions=None, height=None, inscriptions=None, lost_sats=None, minimum_rune_for_next_block=None, runes=None):  # noqa: E501
         """StatusResponse - a model defined in Swagger"""  # noqa: E501
-        self._address_index = None
         self._blessed_inscriptions = None
         self._chain = None
         self._cursed_inscriptions = None
         self._height = None
-        self._initial_sync_time = None
         self._inscriptions = None
         self._lost_sats = None
         self._minimum_rune_for_next_block = None
-        self._rune_index = None
         self._runes = None
-        self._sat_index = None
-        self._started = None
-        self._transaction_index = None
-        self._unrecoverably_reorged = None
-        self._uptime = None
         self.discriminator = None
-        if address_index is not None:
-            self.address_index = address_index
         if blessed_inscriptions is not None:
             self.blessed_inscriptions = blessed_inscriptions
         if chain is not None:
@@ -94,49 +68,14 @@ class StatusResponse(object):
             self.cursed_inscriptions = cursed_inscriptions
         if height is not None:
             self.height = height
-        if initial_sync_time is not None:
-            self.initial_sync_time = initial_sync_time
         if inscriptions is not None:
             self.inscriptions = inscriptions
         if lost_sats is not None:
             self.lost_sats = lost_sats
         if minimum_rune_for_next_block is not None:
             self.minimum_rune_for_next_block = minimum_rune_for_next_block
-        if rune_index is not None:
-            self.rune_index = rune_index
         if runes is not None:
             self.runes = runes
-        if sat_index is not None:
-            self.sat_index = sat_index
-        if started is not None:
-            self.started = started
-        if transaction_index is not None:
-            self.transaction_index = transaction_index
-        if unrecoverably_reorged is not None:
-            self.unrecoverably_reorged = unrecoverably_reorged
-        if uptime is not None:
-            self.uptime = uptime
-
-    @property
-    def address_index(self):
-        """Gets the address_index of this StatusResponse.  # noqa: E501
-
-
-        :return: The address_index of this StatusResponse.  # noqa: E501
-        :rtype: bool
-        """
-        return self._address_index
-
-    @address_index.setter
-    def address_index(self, address_index):
-        """Sets the address_index of this StatusResponse.
-
-
-        :param address_index: The address_index of this StatusResponse.  # noqa: E501
-        :type: bool
-        """
-
-        self._address_index = address_index
 
     @property
     def blessed_inscriptions(self):
@@ -223,27 +162,6 @@ class StatusResponse(object):
         self._height = height
 
     @property
-    def initial_sync_time(self):
-        """Gets the initial_sync_time of this StatusResponse.  # noqa: E501
-
-
-        :return: The initial_sync_time of this StatusResponse.  # noqa: E501
-        :rtype: Duration
-        """
-        return self._initial_sync_time
-
-    @initial_sync_time.setter
-    def initial_sync_time(self, initial_sync_time):
-        """Sets the initial_sync_time of this StatusResponse.
-
-
-        :param initial_sync_time: The initial_sync_time of this StatusResponse.  # noqa: E501
-        :type: Duration
-        """
-
-        self._initial_sync_time = initial_sync_time
-
-    @property
     def inscriptions(self):
         """Gets the inscriptions of this StatusResponse.  # noqa: E501
 
@@ -307,27 +225,6 @@ class StatusResponse(object):
         self._minimum_rune_for_next_block = minimum_rune_for_next_block
 
     @property
-    def rune_index(self):
-        """Gets the rune_index of this StatusResponse.  # noqa: E501
-
-
-        :return: The rune_index of this StatusResponse.  # noqa: E501
-        :rtype: bool
-        """
-        return self._rune_index
-
-    @rune_index.setter
-    def rune_index(self, rune_index):
-        """Sets the rune_index of this StatusResponse.
-
-
-        :param rune_index: The rune_index of this StatusResponse.  # noqa: E501
-        :type: bool
-        """
-
-        self._rune_index = rune_index
-
-    @property
     def runes(self):
         """Gets the runes of this StatusResponse.  # noqa: E501
 
@@ -347,111 +244,6 @@ class StatusResponse(object):
         """
 
         self._runes = runes
-
-    @property
-    def sat_index(self):
-        """Gets the sat_index of this StatusResponse.  # noqa: E501
-
-
-        :return: The sat_index of this StatusResponse.  # noqa: E501
-        :rtype: bool
-        """
-        return self._sat_index
-
-    @sat_index.setter
-    def sat_index(self, sat_index):
-        """Sets the sat_index of this StatusResponse.
-
-
-        :param sat_index: The sat_index of this StatusResponse.  # noqa: E501
-        :type: bool
-        """
-
-        self._sat_index = sat_index
-
-    @property
-    def started(self):
-        """Gets the started of this StatusResponse.  # noqa: E501
-
-
-        :return: The started of this StatusResponse.  # noqa: E501
-        :rtype: str
-        """
-        return self._started
-
-    @started.setter
-    def started(self, started):
-        """Sets the started of this StatusResponse.
-
-
-        :param started: The started of this StatusResponse.  # noqa: E501
-        :type: str
-        """
-
-        self._started = started
-
-    @property
-    def transaction_index(self):
-        """Gets the transaction_index of this StatusResponse.  # noqa: E501
-
-
-        :return: The transaction_index of this StatusResponse.  # noqa: E501
-        :rtype: bool
-        """
-        return self._transaction_index
-
-    @transaction_index.setter
-    def transaction_index(self, transaction_index):
-        """Sets the transaction_index of this StatusResponse.
-
-
-        :param transaction_index: The transaction_index of this StatusResponse.  # noqa: E501
-        :type: bool
-        """
-
-        self._transaction_index = transaction_index
-
-    @property
-    def unrecoverably_reorged(self):
-        """Gets the unrecoverably_reorged of this StatusResponse.  # noqa: E501
-
-
-        :return: The unrecoverably_reorged of this StatusResponse.  # noqa: E501
-        :rtype: bool
-        """
-        return self._unrecoverably_reorged
-
-    @unrecoverably_reorged.setter
-    def unrecoverably_reorged(self, unrecoverably_reorged):
-        """Sets the unrecoverably_reorged of this StatusResponse.
-
-
-        :param unrecoverably_reorged: The unrecoverably_reorged of this StatusResponse.  # noqa: E501
-        :type: bool
-        """
-
-        self._unrecoverably_reorged = unrecoverably_reorged
-
-    @property
-    def uptime(self):
-        """Gets the uptime of this StatusResponse.  # noqa: E501
-
-
-        :return: The uptime of this StatusResponse.  # noqa: E501
-        :rtype: Duration
-        """
-        return self._uptime
-
-    @uptime.setter
-    def uptime(self, uptime):
-        """Sets the uptime of this StatusResponse.
-
-
-        :param uptime: The uptime of this StatusResponse.  # noqa: E501
-        :type: Duration
-        """
-
-        self._uptime = uptime
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -214,45 +214,45 @@ class RunesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_rune(self, rune_name, **kwargs):  # noqa: E501
+    def get_rune(self, identifier, **kwargs):  # noqa: E501
         """Get rune info  # noqa: E501
 
-        Retrieve information about a specific rune  # noqa: E501
+        Retrieve information about a specific rune by name or ID (e.g., \"UNCOMMON•GOODS\" or \"1:0\")  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_rune(rune_name, async_req=True)
+        >>> thread = api.get_rune(identifier, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str rune_name: Rune Name (required)
+        :param str identifier: Rune Name or ID (required)
         :return: GetRuneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_rune_with_http_info(rune_name, **kwargs)  # noqa: E501
+            return self.get_rune_with_http_info(identifier, **kwargs)  # noqa: E501
         else:
-            (data) = self.get_rune_with_http_info(rune_name, **kwargs)  # noqa: E501
+            (data) = self.get_rune_with_http_info(identifier, **kwargs)  # noqa: E501
             return data
 
-    def get_rune_with_http_info(self, rune_name, **kwargs):  # noqa: E501
+    def get_rune_with_http_info(self, identifier, **kwargs):  # noqa: E501
         """Get rune info  # noqa: E501
 
-        Retrieve information about a specific rune  # noqa: E501
+        Retrieve information about a specific rune by name or ID (e.g., \"UNCOMMON•GOODS\" or \"1:0\")  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_rune_with_http_info(rune_name, async_req=True)
+        >>> thread = api.get_rune_with_http_info(identifier, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str rune_name: Rune Name (required)
+        :param str identifier: Rune Name or ID (required)
         :return: GetRuneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['rune_name']  # noqa: E501
+        all_params = ['identifier']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -267,16 +267,16 @@ class RunesApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'rune_name' is set
-        if ('rune_name' not in params or
-                params['rune_name'] is None):
-            raise ValueError("Missing the required parameter `rune_name` when calling `get_rune`")  # noqa: E501
+        # verify the required parameter 'identifier' is set
+        if ('identifier' not in params or
+                params['identifier'] is None):
+            raise ValueError("Missing the required parameter `identifier` when calling `get_rune`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'rune_name' in params:
-            path_params['rune_name'] = params['rune_name']  # noqa: E501
+        if 'identifier' in params:
+            path_params['identifier'] = params['identifier']  # noqa: E501
 
         query_params = []
 
@@ -294,7 +294,7 @@ class RunesApi(object):
         auth_settings = ['ApiKeyAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/rune/{rune_name}', 'GET',
+            '/rune/{identifier}', 'GET',
             path_params,
             query_params,
             header_params,

@@ -29,28 +29,28 @@ class TransactionGetTxOutRequest(object):
     """
     swagger_types = {
         'include_mempool': 'bool',
-        'n': 'int',
-        'txid': 'str'
+        'txid': 'str',
+        'vout': 'int'
     }
 
     attribute_map = {
         'include_mempool': 'include_mempool',
-        'n': 'n',
-        'txid': 'txid'
+        'txid': 'txid',
+        'vout': 'vout'
     }
 
-    def __init__(self, include_mempool=None, n=None, txid=None):  # noqa: E501
+    def __init__(self, include_mempool=None, txid=None, vout=None):  # noqa: E501
         """TransactionGetTxOutRequest - a model defined in Swagger"""  # noqa: E501
         self._include_mempool = None
-        self._n = None
         self._txid = None
+        self._vout = None
         self.discriminator = None
         if include_mempool is not None:
             self.include_mempool = include_mempool
-        if n is not None:
-            self.n = n
         if txid is not None:
             self.txid = txid
+        if vout is not None:
+            self.vout = vout
 
     @property
     def include_mempool(self):
@@ -76,29 +76,6 @@ class TransactionGetTxOutRequest(object):
         self._include_mempool = include_mempool
 
     @property
-    def n(self):
-        """Gets the n of this TransactionGetTxOutRequest.  # noqa: E501
-
-        Required: vout number  # noqa: E501
-
-        :return: The n of this TransactionGetTxOutRequest.  # noqa: E501
-        :rtype: int
-        """
-        return self._n
-
-    @n.setter
-    def n(self, n):
-        """Sets the n of this TransactionGetTxOutRequest.
-
-        Required: vout number  # noqa: E501
-
-        :param n: The n of this TransactionGetTxOutRequest.  # noqa: E501
-        :type: int
-        """
-
-        self._n = n
-
-    @property
     def txid(self):
         """Gets the txid of this TransactionGetTxOutRequest.  # noqa: E501
 
@@ -120,6 +97,29 @@ class TransactionGetTxOutRequest(object):
         """
 
         self._txid = txid
+
+    @property
+    def vout(self):
+        """Gets the vout of this TransactionGetTxOutRequest.  # noqa: E501
+
+        Required: vout number  # noqa: E501
+
+        :return: The vout of this TransactionGetTxOutRequest.  # noqa: E501
+        :rtype: int
+        """
+        return self._vout
+
+    @vout.setter
+    def vout(self, vout):
+        """Sets the vout of this TransactionGetTxOutRequest.
+
+        Required: vout number  # noqa: E501
+
+        :param vout: The vout of this TransactionGetTxOutRequest.  # noqa: E501
+        :type: int
+        """
+
+        self._vout = vout
 
     def to_dict(self):
         """Returns the model properties as a dict"""

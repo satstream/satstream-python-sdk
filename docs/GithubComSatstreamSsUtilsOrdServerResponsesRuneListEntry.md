@@ -1,4 +1,4 @@
-# RuneEntry
+# GithubComSatstreamSsUtilsOrdServerResponsesRuneListEntry
 
 ## Properties
 Name | Type | Description | Notes
@@ -7,9 +7,10 @@ Name | Type | Description | Notes
 **burned** | **int** |  | [optional] 
 **divisibility** | **int** |  | [optional] 
 **etching** | **str** |  | [optional] 
+**id** | **str** |  | [optional] 
 **mints** | **int** |  | [optional] 
 **number** | **int** |  | [optional] 
-**premine** | **int** |  | [optional] 
+**premine** | [**BigInt**](BigInt.md) |  | [optional] 
 **spaced_rune** | **str** |  | [optional] 
 **symbol** | **str** |  | [optional] 
 **terms** | [**RuneTerms**](RuneTerms.md) |  | [optional] 

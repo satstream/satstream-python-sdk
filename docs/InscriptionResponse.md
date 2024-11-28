@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **parents** | **list[str]** |  | [optional] 
 **previous** | **str** |  | [optional] 
 **rune** | **str** |  | [optional] 
-**sat** | **str** |  | [optional] 
+**sat** | **int** |  | [optional] 
 **satpoint** | **str** |  | [optional] 
 **timestamp** | **int** |  | [optional] 
 **value** | **int** |  | [optional] 
