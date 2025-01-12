@@ -130,7 +130,7 @@ class AddressesApi(object):
     def get_address_balance(self, address, **kwargs):  # noqa: E501
         """Get address balance  # noqa: E501
 
-        Get the total BTC balance of an address by summing all its deltas  # noqa: E501
+        Get the total BTC balance in satoshis of an address by summing all its deltas  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_address_balance(address, async_req=True)
@@ -152,7 +152,7 @@ class AddressesApi(object):
     def get_address_balance_with_http_info(self, address, **kwargs):  # noqa: E501
         """Get address balance  # noqa: E501
 
-        Get the total BTC balance of an address by summing all its deltas  # noqa: E501
+        Get the total BTC balance in satoshis of an address by summing all its deltas  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_address_balance_with_http_info(address, async_req=True)

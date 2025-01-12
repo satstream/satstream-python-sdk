@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 Get address balance
 
-Get the total BTC balance of an address by summing all its deltas
+Get the total BTC balance in satoshis of an address by summing all its deltas
 
 ### Example
 ```python
