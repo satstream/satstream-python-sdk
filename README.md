@@ -78,6 +78,23 @@ configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
 # create an instance of the API class
 api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
 address = 'address_example' # str | Address
+
+try:
+    # Get address balance
+    api_response = api_instance.get_address_balance(address)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AddressesApi->get_address_balance: %s\n" % e)
+
+# Configure API key authorization: ApiKeyAuth
+configuration = satstream_python_sdk.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = satstream_python_sdk.AddressesApi(satstream_python_sdk.ApiClient(configuration))
+address = 'address_example' # str | Address
 page_size = 56 # int | Number of results per page (default: 100, max: 1000) (optional)
 start_height = 56 # int | Start block height (optional)
 end_height = 56 # int | End block height (optional)
@@ -154,6 +171,7 @@ All URIs are relative to *https://api.satstream.io/api/v1*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AddressesApi* | [**get_address**](docs/AddressesApi.md#get_address) | **GET** /address/{address} | Get address info
+*AddressesApi* | [**get_address_balance**](docs/AddressesApi.md#get_address_balance) | **GET** /address/{address}/balance | Get address balance
 *AddressesApi* | [**get_address_deltas**](docs/AddressesApi.md#get_address_deltas) | **GET** /address/{address}/deltas | Get address deltas
 *AddressesApi* | [**get_address_rune_deltas**](docs/AddressesApi.md#get_address_rune_deltas) | **GET** /address/{address}/deltas/runes | Get address rune deltas
 *AddressesApi* | [**get_address_utxos**](docs/AddressesApi.md#get_address_utxos) | **GET** /address/{address}/outputs | Get UTXOs for an address
@@ -288,6 +306,8 @@ Class | Method | HTTP request | Description
  - [FeeHorizonEstimate](docs/FeeHorizonEstimate.md)
  - [FeeRange](docs/FeeRange.md)
  - [FetchInscriptionsResponse](docs/FetchInscriptionsResponse.md)
+ - [GetAddressBalanceResponse](docs/GetAddressBalanceResponse.md)
+ - [GetAddressBalanceResponseData](docs/GetAddressBalanceResponseData.md)
  - [GetAddressDeltasResponse](docs/GetAddressDeltasResponse.md)
  - [GetAddressResponse](docs/GetAddressResponse.md)
  - [GetAddressRuneDeltasResponse](docs/GetAddressRuneDeltasResponse.md)

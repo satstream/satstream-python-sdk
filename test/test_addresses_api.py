@@ -35,6 +35,13 @@ class TestAddressesApi(unittest.TestCase):
         """
         pass
 
+    def test_get_address_balance(self):
+        """Test case for get_address_balance
+
+        Get address balance  # noqa: E501
+        """
+        pass
+
     def test_get_address_deltas(self):
         """Test case for get_address_deltas
 
