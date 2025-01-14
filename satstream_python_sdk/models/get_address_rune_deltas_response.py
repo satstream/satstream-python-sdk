@@ -30,25 +30,30 @@ class GetAddressRuneDeltasResponse(object):
     swagger_types = {
         'code': 'int',
         'data': 'list[AddressRuneDelta]',
+        'has_more': 'bool',
         'msg': 'str'
     }
 
     attribute_map = {
         'code': 'code',
         'data': 'data',
+        'has_more': 'has_more',
         'msg': 'msg'
     }
 
-    def __init__(self, code=None, data=None, msg=None):  # noqa: E501
+    def __init__(self, code=None, data=None, has_more=None, msg=None):  # noqa: E501
         """GetAddressRuneDeltasResponse - a model defined in Swagger"""  # noqa: E501
         self._code = None
         self._data = None
+        self._has_more = None
         self._msg = None
         self.discriminator = None
         if code is not None:
             self.code = code
         if data is not None:
             self.data = data
+        if has_more is not None:
+            self.has_more = has_more
         if msg is not None:
             self.msg = msg
 
@@ -93,6 +98,27 @@ class GetAddressRuneDeltasResponse(object):
         """
 
         self._data = data
+
+    @property
+    def has_more(self):
+        """Gets the has_more of this GetAddressRuneDeltasResponse.  # noqa: E501
+
+
+        :return: The has_more of this GetAddressRuneDeltasResponse.  # noqa: E501
+        :rtype: bool
+        """
+        return self._has_more
+
+    @has_more.setter
+    def has_more(self, has_more):
+        """Sets the has_more of this GetAddressRuneDeltasResponse.
+
+
+        :param has_more: The has_more of this GetAddressRuneDeltasResponse.  # noqa: E501
+        :type: bool
+        """
+
+        self._has_more = has_more
 
     @property
     def msg(self):

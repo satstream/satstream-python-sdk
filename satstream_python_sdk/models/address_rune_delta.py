@@ -28,86 +28,39 @@ class AddressRuneDelta(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'address': 'str',
-        'amount': 'str',
         'block_height': 'int',
-        'rune_id': 'str',
-        'txid': 'str',
-        'vout': 'int'
+        'delta': 'str',
+        'incoming': 'str',
+        'outgoing': 'str',
+        'rune_id': 'str'
     }
 
     attribute_map = {
-        'address': 'address',
-        'amount': 'amount',
         'block_height': 'block_height',
-        'rune_id': 'rune_id',
-        'txid': 'txid',
-        'vout': 'vout'
+        'delta': 'delta',
+        'incoming': 'incoming',
+        'outgoing': 'outgoing',
+        'rune_id': 'rune_id'
     }
 
-    def __init__(self, address=None, amount=None, block_height=None, rune_id=None, txid=None, vout=None):  # noqa: E501
+    def __init__(self, block_height=None, delta=None, incoming=None, outgoing=None, rune_id=None):  # noqa: E501
         """AddressRuneDelta - a model defined in Swagger"""  # noqa: E501
-        self._address = None
-        self._amount = None
         self._block_height = None
+        self._delta = None
+        self._incoming = None
+        self._outgoing = None
         self._rune_id = None
-        self._txid = None
-        self._vout = None
         self.discriminator = None
-        if address is not None:
-            self.address = address
-        if amount is not None:
-            self.amount = amount
         if block_height is not None:
             self.block_height = block_height
+        if delta is not None:
+            self.delta = delta
+        if incoming is not None:
+            self.incoming = incoming
+        if outgoing is not None:
+            self.outgoing = outgoing
         if rune_id is not None:
             self.rune_id = rune_id
-        if txid is not None:
-            self.txid = txid
-        if vout is not None:
-            self.vout = vout
-
-    @property
-    def address(self):
-        """Gets the address of this AddressRuneDelta.  # noqa: E501
-
-
-        :return: The address of this AddressRuneDelta.  # noqa: E501
-        :rtype: str
-        """
-        return self._address
-
-    @address.setter
-    def address(self, address):
-        """Sets the address of this AddressRuneDelta.
-
-
-        :param address: The address of this AddressRuneDelta.  # noqa: E501
-        :type: str
-        """
-
-        self._address = address
-
-    @property
-    def amount(self):
-        """Gets the amount of this AddressRuneDelta.  # noqa: E501
-
-
-        :return: The amount of this AddressRuneDelta.  # noqa: E501
-        :rtype: str
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this AddressRuneDelta.
-
-
-        :param amount: The amount of this AddressRuneDelta.  # noqa: E501
-        :type: str
-        """
-
-        self._amount = amount
 
     @property
     def block_height(self):
@@ -131,6 +84,69 @@ class AddressRuneDelta(object):
         self._block_height = block_height
 
     @property
+    def delta(self):
+        """Gets the delta of this AddressRuneDelta.  # noqa: E501
+
+
+        :return: The delta of this AddressRuneDelta.  # noqa: E501
+        :rtype: str
+        """
+        return self._delta
+
+    @delta.setter
+    def delta(self, delta):
+        """Sets the delta of this AddressRuneDelta.
+
+
+        :param delta: The delta of this AddressRuneDelta.  # noqa: E501
+        :type: str
+        """
+
+        self._delta = delta
+
+    @property
+    def incoming(self):
+        """Gets the incoming of this AddressRuneDelta.  # noqa: E501
+
+
+        :return: The incoming of this AddressRuneDelta.  # noqa: E501
+        :rtype: str
+        """
+        return self._incoming
+
+    @incoming.setter
+    def incoming(self, incoming):
+        """Sets the incoming of this AddressRuneDelta.
+
+
+        :param incoming: The incoming of this AddressRuneDelta.  # noqa: E501
+        :type: str
+        """
+
+        self._incoming = incoming
+
+    @property
+    def outgoing(self):
+        """Gets the outgoing of this AddressRuneDelta.  # noqa: E501
+
+
+        :return: The outgoing of this AddressRuneDelta.  # noqa: E501
+        :rtype: str
+        """
+        return self._outgoing
+
+    @outgoing.setter
+    def outgoing(self, outgoing):
+        """Sets the outgoing of this AddressRuneDelta.
+
+
+        :param outgoing: The outgoing of this AddressRuneDelta.  # noqa: E501
+        :type: str
+        """
+
+        self._outgoing = outgoing
+
+    @property
     def rune_id(self):
         """Gets the rune_id of this AddressRuneDelta.  # noqa: E501
 
@@ -150,48 +166,6 @@ class AddressRuneDelta(object):
         """
 
         self._rune_id = rune_id
-
-    @property
-    def txid(self):
-        """Gets the txid of this AddressRuneDelta.  # noqa: E501
-
-
-        :return: The txid of this AddressRuneDelta.  # noqa: E501
-        :rtype: str
-        """
-        return self._txid
-
-    @txid.setter
-    def txid(self, txid):
-        """Sets the txid of this AddressRuneDelta.
-
-
-        :param txid: The txid of this AddressRuneDelta.  # noqa: E501
-        :type: str
-        """
-
-        self._txid = txid
-
-    @property
-    def vout(self):
-        """Gets the vout of this AddressRuneDelta.  # noqa: E501
-
-
-        :return: The vout of this AddressRuneDelta.  # noqa: E501
-        :rtype: int
-        """
-        return self._vout
-
-    @vout.setter
-    def vout(self, vout):
-        """Sets the vout of this AddressRuneDelta.
-
-
-        :param vout: The vout of this AddressRuneDelta.  # noqa: E501
-        :type: int
-        """
-
-        self._vout = vout
 
     def to_dict(self):
         """Returns the model properties as a dict"""
