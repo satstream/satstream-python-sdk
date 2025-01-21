@@ -47,10 +47,8 @@ class CreatePSBTInput(object):
         self.discriminator = None
         if sequence is not None:
             self.sequence = sequence
-        if txid is not None:
-            self.txid = txid
-        if vout is not None:
-            self.vout = vout
+        self.txid = txid
+        self.vout = vout
 
     @property
     def sequence(self):
@@ -95,6 +93,8 @@ class CreatePSBTInput(object):
         :param txid: The txid of this CreatePSBTInput.  # noqa: E501
         :type: str
         """
+        if txid is None:
+            raise ValueError("Invalid value for `txid`, must not be `None`")  # noqa: E501
 
         self._txid = txid
 
@@ -118,6 +118,8 @@ class CreatePSBTInput(object):
         :param vout: The vout of this CreatePSBTInput.  # noqa: E501
         :type: int
         """
+        if vout is None:
+            raise ValueError("Invalid value for `vout`, must not be `None`")  # noqa: E501
 
         self._vout = vout
 
