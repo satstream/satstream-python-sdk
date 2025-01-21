@@ -599,7 +599,7 @@ class TransactionsApi(object):
         auth_settings = ['ApiKeyAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/tx/{txid}/hex', 'GET',
+            '/tx/{txid}/raw/hex', 'GET',
             path_params,
             query_params,
             header_params,
