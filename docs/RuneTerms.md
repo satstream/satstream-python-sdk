@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **int** |  | [optional] 
+**amount** | [**BigInt**](BigInt.md) |  | [optional] 
 **cap** | [**BigInt**](BigInt.md) |  | [optional] 
 **height** | **list[int]** |  | [optional] 
 **offset** | **list[int]** |  | [optional] 

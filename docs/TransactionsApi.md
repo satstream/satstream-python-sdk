@@ -13,7 +13,6 @@ Method | HTTP request | Description
 [**get_raw_transaction_prevout**](TransactionsApi.md#get_raw_transaction_prevout) | **GET** /tx/{txid}/raw/prevout | Get raw transaction with prevouts (verbosity 2)
 [**get_tx_out**](TransactionsApi.md#get_tx_out) | **POST** /tx/out | Get transaction output
 [**get_tx_out_proof**](TransactionsApi.md#get_tx_out_proof) | **POST** /tx/outproof | Get transaction output proof
-[**get_tx_out_set_info**](TransactionsApi.md#get_tx_out_set_info) | **POST** /tx/out/set/info | Get transaction output set information
 [**get_tx_spending_prevout**](TransactionsApi.md#get_tx_spending_prevout) | **POST** /tx/spending-prevout | Get transaction spending prevout
 [**send_raw_transaction**](TransactionsApi.md#send_raw_transaction) | **POST** /tx/send | Send raw transaction
 [**verify_tx_out_proof**](TransactionsApi.md#verify_tx_out_proof) | **POST** /tx/outproof/verify | Verify transaction output proof
@@ -492,60 +491,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetTxOutProofResponse**](GetTxOutProofResponse.md)
-
-### Authorization
-
-[ApiKeyAuth](../README.md#ApiKeyAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **get_tx_out_set_info**
-> InlineResponse2002 get_tx_out_set_info(body)
-
-Get transaction output set information
-
-Returns statistics about the unspent transaction output set
-
-### Example
-```python
-from __future__ import print_function
-import time
-import satstream_python_sdk
-from satstream_python_sdk.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: ApiKeyAuth
-configuration = satstream_python_sdk.Configuration()
-configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = satstream_python_sdk.TransactionsApi(satstream_python_sdk.ApiClient(configuration))
-body = satstream_python_sdk.TransactionGetTxOutSetInfoRequest() # TransactionGetTxOutSetInfoRequest | UTXO set info request parameters
-
-try:
-    # Get transaction output set information
-    api_response = api_instance.get_tx_out_set_info(body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling TransactionsApi->get_tx_out_set_info: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**TransactionGetTxOutSetInfoRequest**](TransactionGetTxOutSetInfoRequest.md)| UTXO set info request parameters | 
-
-### Return type
-
-[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 

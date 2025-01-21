@@ -28,7 +28,7 @@ class RuneTerms(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'amount': 'int',
+        'amount': 'BigInt',
         'cap': 'BigInt',
         'height': 'list[int]',
         'offset': 'list[int]'
@@ -63,7 +63,7 @@ class RuneTerms(object):
 
 
         :return: The amount of this RuneTerms.  # noqa: E501
-        :rtype: int
+        :rtype: BigInt
         """
         return self._amount
 
@@ -73,7 +73,7 @@ class RuneTerms(object):
 
 
         :param amount: The amount of this RuneTerms.  # noqa: E501
-        :type: int
+        :type: BigInt
         """
 
         self._amount = amount

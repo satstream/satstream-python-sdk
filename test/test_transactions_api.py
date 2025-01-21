@@ -91,13 +91,6 @@ class TestTransactionsApi(unittest.TestCase):
         """
         pass
 
-    def test_get_tx_out_set_info(self):
-        """Test case for get_tx_out_set_info
-
-        Get transaction output set information  # noqa: E501
-        """
-        pass
-
     def test_get_tx_spending_prevout(self):
         """Test case for get_tx_spending_prevout
 
