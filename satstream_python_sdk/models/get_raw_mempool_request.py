@@ -28,30 +28,25 @@ class GetRawMempoolRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'mempool_sequence': 'bool',
-        'verbose': 'bool'
+        'mempool_sequence': 'bool'
     }
 
     attribute_map = {
-        'mempool_sequence': 'mempool_sequence',
-        'verbose': 'verbose'
+        'mempool_sequence': 'mempool_sequence'
     }
 
-    def __init__(self, mempool_sequence=None, verbose=None):  # noqa: E501
+    def __init__(self, mempool_sequence=None):  # noqa: E501
         """GetRawMempoolRequest - a model defined in Swagger"""  # noqa: E501
         self._mempool_sequence = None
-        self._verbose = None
         self.discriminator = None
         if mempool_sequence is not None:
             self.mempool_sequence = mempool_sequence
-        if verbose is not None:
-            self.verbose = verbose
 
     @property
     def mempool_sequence(self):
         """Gets the mempool_sequence of this GetRawMempoolRequest.  # noqa: E501
 
-        Optional: If verbose=false, returns txids with mempool sequence number  # noqa: E501
+        Optional: Returns txids with mempool sequence number  # noqa: E501
 
         :return: The mempool_sequence of this GetRawMempoolRequest.  # noqa: E501
         :rtype: bool
@@ -62,36 +57,13 @@ class GetRawMempoolRequest(object):
     def mempool_sequence(self, mempool_sequence):
         """Sets the mempool_sequence of this GetRawMempoolRequest.
 
-        Optional: If verbose=false, returns txids with mempool sequence number  # noqa: E501
+        Optional: Returns txids with mempool sequence number  # noqa: E501
 
         :param mempool_sequence: The mempool_sequence of this GetRawMempoolRequest.  # noqa: E501
         :type: bool
         """
 
         self._mempool_sequence = mempool_sequence
-
-    @property
-    def verbose(self):
-        """Gets the verbose of this GetRawMempoolRequest.  # noqa: E501
-
-        Optional: True for detailed information, false for just txids  # noqa: E501
-
-        :return: The verbose of this GetRawMempoolRequest.  # noqa: E501
-        :rtype: bool
-        """
-        return self._verbose
-
-    @verbose.setter
-    def verbose(self, verbose):
-        """Sets the verbose of this GetRawMempoolRequest.
-
-        Optional: True for detailed information, false for just txids  # noqa: E501
-
-        :param verbose: The verbose of this GetRawMempoolRequest.  # noqa: E501
-        :type: bool
-        """
-
-        self._verbose = verbose
 
     def to_dict(self):
         """Returns the model properties as a dict"""
