@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "satstream_python_sdk"
-VERSION = "1.0.54"
+VERSION = "1.0.55"
 # To install the library, run the following
 #
 # python setup.py install
